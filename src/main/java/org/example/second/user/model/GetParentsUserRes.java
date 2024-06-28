@@ -1,0 +1,41 @@
+package org.example.second.user.model;
+
+import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
+@Data
+@EqualsAndHashCode
+public class GetParentsUserRes {
+    private long parentsId;
+
+    @Schema(description = "아이디")
+    private String uid;
+
+    @Schema(description = "이름")
+    private String nm;
+
+    @Schema(description = "전화번호")
+    private String phone;
+
+    @Schema(description = "비상연락망")
+    private String subPhone;
+
+    @Schema(description = "이메일")
+    private String email;
+
+    @Schema(description = "관계")
+    private String connet;
+
+    @Schema(description = "권한 ROLE_USER")
+    private String auth;
+
+    @Schema(description = "우편번호")
+    private String zoneCode
+            ;
+    @Schema(description = "주소")
+    private String addr;
+
+    @Schema(description = "가입 승인 여부")
+    private int acept;
+}

@@ -1,0 +1,81 @@
+spring:
+  config:
+    import: optional:file:.env
+  application:
+    name: second
+  datasource:
+    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+    url: ${DEFAULT.DB_URL}
+    username: ${DEFAULT.DB_USERNAME}
+    password: ${DEFAULT.DB_PASSWORD}
+  servlet:
+    multipart:
+      max-file-size: 5MB
+
+mybatis:
+  mapper-locations: mappers/**/*.xml
+
+springdoc:
+  api-docs:
+    version: openapi_3_1
+  swagger-ui:
+    path: /swagger
+    operations-sorter: method
+    default-model-expand-depth: 10
+    display-request-duration: true
+  cache:
+    disabled: true
+
+server:
+  port: 8080
+
+file:
+  dir: ${DEFAULT.FILE_DIRECTORY}
+app:
+  jwt:
+    secret: ${JWT_SECRET}
+    header-schema-name: authorization
+    token-type: Bearer
+    access-token-expiry: 1_800_000
+    refresh-token-expiry: 1_296_000_000
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  info:
+    java:
+      enabled: true
+    os:
+      enabled: true
+    env:
+      enabled: true
+  server:
+    port: 8080
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: tdd
+  datasource:
+    url: ${TDD.DB_URL}
+  sql:
+    init:
+      mode: never
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+  datasource:
+    url: ${PROD.DB_URL}
+    username: ${PROD.DB_USERNAME}
+    password: ${PROD.DB_PASSWORD}
+file:
+  dir: ${PROD.FILE_DIRECTORY}

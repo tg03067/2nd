@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.second.user.ParentsUserMapper">
+    <insert id="postParentsUser" keyProperty="parentsId" useGeneratedKeys="true" >
+        INSERT INTO parents
+        SET uid = #{uid}
+            , upw = #{upw}
+            , nm = #{nm}
+            , phone = #{phone}
+            , subphone = #{subPhone}
+            , email = #{email}
+            , connet = #{connet}
+            , auth = #{auth}
+            , addr = #{addr}
+            , acept = #{acept}
+    </insert>
+    <select id="getParentsUser">
+        SELECT parents_id AS parentsId
+                , uid
+                , nm
+                , phone
+                , subphone AS subPhone
+                , email
+                , connet
+                , auth
+                , addr
+                , acept
+        FROM parents
+        WHERE parents_id = #{parentsId}
+    </select>
+    <select id="getFindId">
+        SELECT uid
+        FROM parents
+        WHERE nm = #{nm}
+        AND phone = #{phone}
+    </select>
+    <update id="patchParentsUser">
+        UPDATE parents A
+        INNER JOIN student B
+        ON A.parents_id = B.parents_id
+        SET B.name = #{stuNm}
+            , A.nm = #{nm}
+            , A.connet = #{connet}
+            , A.phone = #{phone}
+            , A.subphone = #{subPhone}
+            , A.email = #{email}
+            , B.stu_eng_nm = #{stuEngNm}
+            , A.addr = #{addr}
+            , B.etc = #{stuEtc}
+    </update>
+    <update id="PatchPassword">
+        UPDATE parents
+        SET upw = #{newUpw}
+        WHERE parents_id = #{parentsId}
+    </update>
+
+</mapper>
