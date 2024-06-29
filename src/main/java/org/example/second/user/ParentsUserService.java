@@ -7,5 +7,5 @@ public interface ParentsUserService {
     ParentsUserEntity getParentsUser(GetParentsUserReq parentsId);
     int patchParentsUser(PatchParentsUserReq p);
     GetFindIdRes getFindId(GetFindIdReq req);
-    int PatchPassword(PatchPasswordReq req);
+    int patchPassword(PatchPasswordReq req);
 }

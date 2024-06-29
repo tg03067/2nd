@@ -17,7 +17,10 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.argThat;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.verify;
 @TestPropertySource(
@@ -41,17 +44,19 @@ class ParentsUserServiceTest {
     @Test @DisplayName("post 1")
     void postParentsUser() {
         PostParentsUserReq p1 = new PostParentsUserReq();
-        p1.setUid("p1");
-        p1.setUpw("1212");
+        p1.setUid("pG123456");
+        p1.setUpw("aAbB!@1212");
         p1.setNm("홍길동");
+        p1.setEmail("12345@naver.com");
         p1.setPhone("010-1234-1234");
         p1.setConnet("부");
         p1.setAuth("ROLE_USER");
         p1.setAcept(2);
         PostParentsUserReq p2 = new PostParentsUserReq();
-        p2.setUid("p2");
-        p2.setUpw("123123");
+        p2.setUid("pG234567");
+        p2.setUpw("aAbB!@1212");
         p2.setNm("김길동");
+        p1.setEmail("12345678@naver.com");
         p2.setPhone("010-2345-2345");
         p2.setConnet("모");
         p2.setAuth("ROLE_USER");
@@ -113,6 +118,38 @@ class ParentsUserServiceTest {
 
     @Test @DisplayName("비밀번호 수정")
     void patchPassword() {
+        String encodedOldPassword = "encodedOldPassword";
+        String encodedNewPassword = "encodedNewPassword";
+        ParentsUserEntity p1 = new ParentsUserEntity();
+        p1.setParentsId(1L);
+        p1.setUid("pG123456");
+        p1.setUpw(encodedOldPassword);
+        p1.setNm("홍길동");
+        p1.setEmail("12345@naver.com");
+        p1.setPhone("010-1234-1234");
+        p1.setConnet("부");
+        p1.setAuth("ROLE_USER");
+        p1.setAcept(2);
 
+        PatchPasswordReq req1 = new PatchPasswordReq();
+        req1.setParentsId(p1.getParentsId());
+        req1.setUid(p1.getUid());
+        req1.setUpw("aAbB!@1212");
+        req1.setNewUpw(encodedNewPassword);
+
+        GetParentsUserReq q = new GetParentsUserReq();
+        q.setSignedUserId(p1.getParentsId());;
+        given(mapper.getParentsUser(q)).willReturn(p1);
+        given(passwordEncoder.matches(req1.getUpw(), encodedOldPassword)).willReturn(true);
+        given(passwordEncoder.encode(req1.getNewUpw())).willReturn(encodedNewPassword);
+        given(mapper.patchPassword(any(PatchPasswordReq.class))).willReturn(1);
+
+        int result = assertDoesNotThrow(() -> service.patchPassword(req1));
+
+        assertEquals(1, result);
+        verify(mapper).patchPassword(argThat(req ->
+                req.getParentsId() == p1.getParentsId() &&
+                req.getNewUpw().equals(encodedNewPassword)
+        ));
     }
 }

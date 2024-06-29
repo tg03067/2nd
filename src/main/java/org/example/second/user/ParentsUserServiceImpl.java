@@ -8,7 +8,6 @@ import org.example.second.common.CustomFileUtils;
 import org.example.second.security.AuthenticationFacade;
 import org.example.second.security.jwt.JwtTokenProviderV2;
 import org.example.second.user.model.*;
-import org.mindrot.jbcrypt.BCrypt;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -38,13 +37,18 @@ public class ParentsUserServiceImpl implements ParentsUserService {
 
     @Override
     public int postParentsUser(PostParentsUserReq p) {
-
-        if(!idPattern.matcher(p.getUid()).matches()){
-            throw new RuntimeException("아이디 이상");
+        if(p.getUid() == null || p.getUpw() == null){
+            throw new IllegalArgumentException("아이디와 비밀번호는 필수 입력사항입니다.");
+        } else if (!idPattern.matcher(p.getUid()).matches()) {
+            throw new IllegalArgumentException("아이디 형식이 잘못되었습니다.");
         } else if (!passwordPattern.matcher(p.getUpw()).matches()) {
-            throw new RuntimeException("비밀번호 이상");
-        } else if (!emailPattern.matcher(p.getEmail()).matches()) {
-            throw new RuntimeException("Email 이상");
+            throw new IllegalArgumentException("비밀번호 형식이 잘못되었습니다.");
+        } else if (p.getEmail() != null && !p.getEmail().isEmpty()) {
+            if(!emailPattern.matcher(p.getEmail()).matches()) {
+                throw new IllegalArgumentException("이메일 형식이 잘못되었습니다.");
+            } else {
+                p.setEmail(null);
+            }
         }
         String password = passwordEncoder.encode(p.getUpw());
         p.setUpw(password);
@@ -67,18 +71,18 @@ public class ParentsUserServiceImpl implements ParentsUserService {
     }
 
     @Override
-    public int PatchPassword(PatchPasswordReq req) {
-        GetParentsUserReq req1 = new GetParentsUserReq();
-        req1.setSignedUserId(req.getParentsId());
-        ParentsUserEntity entity = mapper.getParentsUser(req1);
+    public int patchPassword(PatchPasswordReq p) {
+        GetParentsUserReq req = new GetParentsUserReq();
+        req.setSignedUserId(p.getParentsId());
+        ParentsUserEntity entity = mapper.getParentsUser(req);
         if(Objects.isNull(entity)){
             throw new RuntimeException("아이디를 확인해 주세요");
-        } else if(!BCrypt.checkpw(req.getUpw(), entity.getUpw())) {
+        } else if(!passwordEncoder.matches(p.getUpw(), entity.getUpw())) {
             throw new RuntimeException("비밀번호를 확인해 주세요");
         }
-        String password = passwordEncoder.encode(req.getNewUpw());
-        req.setNewUpw(password);
-        req.setParentsId(entity.getParentsId());
-        return mapper.PatchPassword(req);
+        String password = passwordEncoder.encode(p.getNewUpw());
+        p.setNewUpw(password);
+        p.setParentsId(entity.getParentsId());
+        return mapper.patchPassword(p);
     }
 }

@@ -8,8 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.test.context.ActiveProfiles;
 
-import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.*;
 @MybatisTest
 @ActiveProfiles("tdd")
@@ -165,7 +163,7 @@ class ParentsUserMapperTest {
         req1.setParentsId(p.getParentsId());
         req1.setUpw("1212");
         req1.setNewUpw("123123");
-        int affectedRow1 = mapper.PatchPassword(req1);
+        int affectedRow1 = mapper.patchPassword(req1);
         assertEquals(1, affectedRow1);
         mapper.getParentsUser(req);
     }

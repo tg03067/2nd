@@ -2882,3 +2882,33 @@ Caused by: java.lang.ClassNotFoundException: Cannot find class: GetParentsUserRe
 
 [2024-06-28 16:24:48 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
 [2024-06-28 16:24:48 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2024-06-29 13:31:49 [32mINFO [0;39m restartedMain] [org.example.second.Application] [36mStarting Application using Java 17.0.11 with PID 141028 (E:\2024-01\2nd\2nd\build\classes\java\main started by tg030 in E:\2024-01\2nd\2nd)[0;39m
+[2024-06-29 13:31:49 [32mINFO [0;39m restartedMain] [org.example.second.Application] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2024-06-29 13:31:49 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable[0;39m
+[2024-06-29 13:31:49 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'[0;39m
+[2024-06-29 13:31:50 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8080 (http)[0;39m
+[2024-06-29 13:31:50 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8080"][0;39m
+[2024-06-29 13:31:50 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2024-06-29 13:31:50 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.25][0;39m
+[2024-06-29 13:31:50 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2024-06-29 13:31:50 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 811 ms[0;39m
+[2024-06-29 13:31:50 [33mWARN [0;39m restartedMain] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] [36m
+
+Using generated security password: 1cdab845-c0e6-4662-b41b-98e978c51221
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+[0;39m
+[2024-06-29 13:31:50 [32mINFO [0;39m restartedMain] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] [36mGlobal AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager[0;39m
+[2024-06-29 13:31:50 [32mINFO [0;39m restartedMain] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] [36mExposing 14 endpoints beneath base path '/actuator'[0;39m
+[2024-06-29 13:31:50 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2024-06-29 13:31:50 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8080"][0;39m
+[2024-06-29 13:31:50 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8080 (http) with context path '/'[0;39m
+[2024-06-29 13:31:50 [32mINFO [0;39m restartedMain] [org.example.second.Application] [36mStarted Application in 1.721 seconds (process running for 2.108)[0;39m
+[2024-06-29 13:31:51 [32mINFO [0;39m RMI TCP Connection(2)-192.168.219.100] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
+[2024-06-29 13:31:51 [32mINFO [0;39m RMI TCP Connection(2)-192.168.219.100] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
+[2024-06-29 13:31:51 [32mINFO [0;39m RMI TCP Connection(2)-192.168.219.100] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
+[2024-06-29 13:31:51 [32mINFO [0;39m RMI TCP Connection(1)-192.168.219.100] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Starting...[0;39m
+[2024-06-29 13:31:51 [32mINFO [0;39m RMI TCP Connection(1)-192.168.219.100] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@690ebe51[0;39m
+[2024-06-29 13:31:51 [32mINFO [0;39m RMI TCP Connection(1)-192.168.219.100] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Start completed.[0;39m
+[2024-06-29 13:31:53 [32mINFO [0;39m SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown initiated...[0;39m
+[2024-06-29 13:31:53 [32mINFO [0;39m SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown completed.[0;39m
