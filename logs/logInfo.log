@@ -4106,3 +4106,830 @@ This generated password is for development use only. Your security configuration
 [2024-07-01 17:39:57 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
 [2024-07-01 17:39:57 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
 [2024-07-01 17:39:57 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Started ParentsUserControllerTest in 2.03 seconds (process running for 2.92)
+[2024-07-01 21:57:56 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Starting ParentsUserControllerTest using Java 17.0.11 with PID 183504 (started by tg030 in E:\2024-01\2nd\2nd)
+[2024-07-01 21:57:56 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-07-01 21:57:58 WARN  Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+
+Using generated security password: 720fa340-e6db-4f67-8a4a-2366b282774b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2024-07-01 21:57:58 INFO  Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2024-07-01 21:57:58 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-07-01 21:57:58 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-07-01 21:57:58 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-07-01 21:57:58 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Started ParentsUserControllerTest in 1.92 seconds (process running for 2.748)
+[2024-07-01 22:07:04 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Starting ParentsUserControllerTest using Java 17.0.11 with PID 184916 (started by tg030 in E:\2024-01\2nd\2nd)
+[2024-07-01 22:07:04 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-07-01 22:07:05 WARN  Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+
+Using generated security password: 1d8c41cc-6eca-41d4-aada-ecf15427f66d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2024-07-01 22:07:05 INFO  Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2024-07-01 22:07:05 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-07-01 22:07:05 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-07-01 22:07:05 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-07-01 22:07:05 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Started ParentsUserControllerTest in 1.86 seconds (process running for 2.62)
+[2024-07-01 22:10:24 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Starting ParentsUserControllerTest using Java 17.0.11 with PID 22496 (started by tg030 in E:\2024-01\2nd\2nd)
+[2024-07-01 22:10:24 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-07-01 22:10:25 WARN  Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+
+Using generated security password: f326305c-32bb-4f43-b910-7f0415cc6bd5
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2024-07-01 22:10:25 INFO  Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2024-07-01 22:10:25 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-07-01 22:10:25 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-07-01 22:10:25 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-07-01 22:10:25 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Started ParentsUserControllerTest in 1.815 seconds (process running for 2.574)
+[2024-07-01 22:11:16 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Starting ParentsUserControllerTest using Java 17.0.11 with PID 185176 (started by tg030 in E:\2024-01\2nd\2nd)
+[2024-07-01 22:11:16 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-07-01 22:11:18 WARN  Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+
+Using generated security password: 47412ba6-808b-49f9-9ff9-3cf49890c9c3
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2024-07-01 22:11:18 INFO  Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2024-07-01 22:11:18 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-07-01 22:11:18 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-07-01 22:11:18 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-07-01 22:11:18 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Started ParentsUserControllerTest in 1.83 seconds (process running for 2.607)
+[2024-07-01 22:13:20 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Starting ParentsUserControllerTest using Java 17.0.11 with PID 185964 (started by tg030 in E:\2024-01\2nd\2nd)
+[2024-07-01 22:13:20 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-07-01 22:13:21 WARN  Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+
+Using generated security password: a8d876d6-0979-41b2-8a59-dd2407f4058b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2024-07-01 22:13:21 INFO  Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2024-07-01 22:13:21 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-07-01 22:13:21 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-07-01 22:13:21 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-07-01 22:13:21 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Started ParentsUserControllerTest in 1.789 seconds (process running for 2.526)
+[2024-07-01 22:20:57 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Starting ParentsUserControllerTest using Java 17.0.11 with PID 183836 (started by tg030 in E:\2024-01\2nd\2nd)
+[2024-07-01 22:20:57 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-07-01 22:20:58 WARN  Test worker] [org.springframework.web.context.support.GenericWebApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfiguration': Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'org.example.second.security.jwt.JwtAuthenticationFilter' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+[2024-07-01 22:20:58 INFO  Test worker] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[2024-07-01 22:20:58 ERROR Test worker] [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in org.example.second.security.SecurityConfiguration required a bean of type 'org.example.second.security.jwt.JwtAuthenticationFilter' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.example.second.security.jwt.JwtAuthenticationFilter' in your configuration.
+
+[2024-07-01 22:20:58 WARN  Test worker] [org.springframework.test.context.TestContextManager] Caught exception while allowing TestExecutionListener [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener] to prepare test instance [org.example.second.user.ParentsUserControllerTest@34ab26a]
+java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@9c0d0bd testClass = org.example.second.user.ParentsUserControllerTest, locations = [], classes = [org.example.second.security.SecurityConfiguration], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@463b4ac8, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@df8f1379, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@6f0817e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@207b8649, [ImportsContextCustomizer@1da745a2 key = [org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration, org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration, org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration, org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration, org.springframework.boot.autoconfigure.hateoas.HypermediaAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration, org.springframework.boot.test.autoconfigure.web.reactive.WebTestClientAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.jsonb.JsonbAutoConfiguration, org.example.second.CharEncodingConfiguration, org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration, org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7a791b66, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@590c73d3, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@69c048d8, org.springframework.boot.test.context.SpringBootTestAnnotation@d128af1e], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:180)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.postProcessFields(MockitoTestExecutionListener.java:122)
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.injectFields(MockitoTestExecutionListener.java:106)
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.prepareTestInstance(MockitoTestExecutionListener.java:63)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:163)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:378)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:290)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:279)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:278)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:106)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:105)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:119)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:94)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:89)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:119)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:66)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfiguration': Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'org.example.second.security.jwt.JwtAuthenticationFilter' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1194)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1463)
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:553)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152)
+	... 87 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.example.second.security.jwt.JwtAuthenticationFilter' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1880)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1406)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 111 common frames omitted
+[2024-07-01 22:21:50 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Starting ParentsUserControllerTest using Java 17.0.11 with PID 184012 (started by tg030 in E:\2024-01\2nd\2nd)
+[2024-07-01 22:21:50 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-07-01 22:21:51 WARN  Test worker] [org.springframework.web.context.support.GenericWebApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfiguration': Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'org.example.second.security.jwt.JwtAuthenticationFilter' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+[2024-07-01 22:21:51 INFO  Test worker] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[2024-07-01 22:21:51 ERROR Test worker] [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in org.example.second.security.SecurityConfiguration required a bean of type 'org.example.second.security.jwt.JwtAuthenticationFilter' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.example.second.security.jwt.JwtAuthenticationFilter' in your configuration.
+
+[2024-07-01 22:21:51 WARN  Test worker] [org.springframework.test.context.TestContextManager] Caught exception while allowing TestExecutionListener [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener] to prepare test instance [org.example.second.user.ParentsUserControllerTest@47eaf55c]
+java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@62faf77 testClass = org.example.second.user.ParentsUserControllerTest, locations = [], classes = [org.example.second.security.SecurityConfiguration], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@40f70521, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@c76dd10a, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@6f0817e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@67ab1c47, [ImportsContextCustomizer@26994c6a key = [org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration, org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration, org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration, org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration, org.springframework.boot.autoconfigure.hateoas.HypermediaAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration, org.springframework.boot.test.autoconfigure.web.reactive.WebTestClientAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.jsonb.JsonbAutoConfiguration, org.example.second.CharEncodingConfiguration, org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration, org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@4a3329b9, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@12bfd80d, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@38f3cf42, org.springframework.boot.test.context.SpringBootTestAnnotation@e9b7f7a3], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:180)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.postProcessFields(MockitoTestExecutionListener.java:122)
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.injectFields(MockitoTestExecutionListener.java:106)
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.prepareTestInstance(MockitoTestExecutionListener.java:63)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:163)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:378)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:290)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:279)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:278)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:106)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:105)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:119)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:94)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:89)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:119)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:66)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfiguration': Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'org.example.second.security.jwt.JwtAuthenticationFilter' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1194)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1463)
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:553)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152)
+	... 87 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.example.second.security.jwt.JwtAuthenticationFilter' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1880)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1406)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 111 common frames omitted
+[2024-07-01 22:22:32 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Starting ParentsUserControllerTest using Java 17.0.11 with PID 159996 (started by tg030 in E:\2024-01\2nd\2nd)
+[2024-07-01 22:22:32 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-07-01 22:22:33 WARN  Test worker] [org.springframework.web.context.support.GenericWebApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfiguration': Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'org.example.second.security.jwt.JwtAuthenticationFilter' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+[2024-07-01 22:22:33 INFO  Test worker] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[2024-07-01 22:22:33 ERROR Test worker] [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in org.example.second.security.SecurityConfiguration required a bean of type 'org.example.second.security.jwt.JwtAuthenticationFilter' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.example.second.security.jwt.JwtAuthenticationFilter' in your configuration.
+
+[2024-07-01 22:22:33 WARN  Test worker] [org.springframework.test.context.TestContextManager] Caught exception while allowing TestExecutionListener [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener] to prepare test instance [org.example.second.user.ParentsUserControllerTest@27d98bef]
+java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@4bfa5eb9 testClass = org.example.second.user.ParentsUserControllerTest, locations = [], classes = [org.example.second.security.SecurityConfiguration], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@625abb97, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@f20cda45, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@dd215631, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@183e8023, [ImportsContextCustomizer@754de353 key = [org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration, org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration, org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration, org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration, org.springframework.boot.autoconfigure.hateoas.HypermediaAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration, org.springframework.boot.test.autoconfigure.web.reactive.WebTestClientAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.jsonb.JsonbAutoConfiguration, org.example.second.CharEncodingConfiguration, org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration, org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@16ecee1, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4a3329b9, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@56d2da46, org.springframework.boot.test.context.SpringBootTestAnnotation@2d951b1f], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:180)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.postProcessFields(MockitoTestExecutionListener.java:122)
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.injectFields(MockitoTestExecutionListener.java:106)
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.prepareTestInstance(MockitoTestExecutionListener.java:63)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:163)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:378)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:290)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:279)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:278)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:106)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:105)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:119)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:94)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:89)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:119)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:66)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfiguration': Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'org.example.second.security.jwt.JwtAuthenticationFilter' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1194)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1463)
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:553)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152)
+	... 87 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.example.second.security.jwt.JwtAuthenticationFilter' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1880)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1406)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 111 common frames omitted
+[2024-07-01 22:25:00 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Starting ParentsUserControllerTest using Java 17.0.11 with PID 186716 (started by tg030 in E:\2024-01\2nd\2nd)
+[2024-07-01 22:25:00 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-07-01 22:25:01 WARN  Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+
+Using generated security password: e0c37f29-6c44-44f4-9fb5-a6fcf93a6549
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2024-07-01 22:25:01 INFO  Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2024-07-01 22:25:01 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-07-01 22:25:01 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-07-01 22:25:01 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-07-01 22:25:01 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Started ParentsUserControllerTest in 1.791 seconds (process running for 2.562)
+[2024-07-01 22:25:01 WARN  Test worker] [org.springframework.test.context.TestContextManager] Caught exception while invoking 'beforeTestMethod' callback on TestExecutionListener [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener] for test method [void org.example.second.user.ParentsUserControllerTest.postParents() throws java.lang.Exception] and test instance [org.example.second.user.ParentsUserControllerTest@6a878778]
+java.lang.IllegalStateException: Unable to create SecurityContext using @org.springframework.security.test.context.support.WithMockUser(authorities={}, password="password", roles={"ROLE_PARENTS"}, setupBefore=TEST_METHOD, username="user", value="user")
+	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.lambda$createTestSecurityContext$1(WithSecurityContextTestExecutionListener.java:143)
+	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.beforeTestMethod(WithSecurityContextTestExecutionListener.java:90)
+	at org.springframework.test.context.TestContextManager.beforeTestMethod(TestContextManager.java:320)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.beforeEach(SpringExtension.java:240)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeEachCallbacks$2(TestMethodTestDescriptor.java:167)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeBeforeMethodsOrCallbacksUntilExceptionOccurs$6(TestMethodTestDescriptor.java:203)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeMethodsOrCallbacksUntilExceptionOccurs(TestMethodTestDescriptor.java:203)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeBeforeEachCallbacks(TestMethodTestDescriptor.java:166)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:133)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:119)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:94)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:89)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:119)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:66)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+Caused by: java.lang.IllegalArgumentException: roles cannot start with ROLE_ Got ROLE_PARENTS
+	at org.springframework.util.Assert.isTrue(Assert.java:129)
+	at org.springframework.security.test.context.support.WithMockUserSecurityContextFactory.createSecurityContext(WithMockUserSecurityContextFactory.java:57)
+	at org.springframework.security.test.context.support.WithMockUserSecurityContextFactory.createSecurityContext(WithMockUserSecurityContextFactory.java:42)
+	at org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener.lambda$createTestSecurityContext$1(WithSecurityContextTestExecutionListener.java:140)
+	... 71 common frames omitted
+[2024-07-01 22:26:22 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Starting ParentsUserControllerTest using Java 17.0.11 with PID 185644 (started by tg030 in E:\2024-01\2nd\2nd)
+[2024-07-01 22:26:22 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-07-01 22:26:23 WARN  Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+
+Using generated security password: 35c40470-439f-4b70-80f5-a844d62f3cdb
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2024-07-01 22:26:23 INFO  Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2024-07-01 22:26:24 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-07-01 22:26:24 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-07-01 22:26:24 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-07-01 22:26:24 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Started ParentsUserControllerTest in 1.879 seconds (process running for 2.642)
+[2024-07-01 22:26:24 INFO  Test worker] [org.example.second.security.jwt.JwtAuthenticationFilter] JwtAuthenticationFilter-Token: null
+[2024-07-01 22:29:45 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Starting ParentsUserControllerTest using Java 17.0.11 with PID 183644 (started by tg030 in E:\2024-01\2nd\2nd)
+[2024-07-01 22:29:45 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-07-01 22:29:46 WARN  Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+
+Using generated security password: 9366a77f-7083-4e67-aadc-1fdc93945e4e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2024-07-01 22:29:46 INFO  Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2024-07-01 22:29:47 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-07-01 22:29:47 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-07-01 22:29:47 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-07-01 22:29:47 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Started ParentsUserControllerTest in 1.83 seconds (process running for 2.584)
+[2024-07-01 22:29:47 INFO  Test worker] [org.example.second.security.jwt.JwtAuthenticationFilter] JwtAuthenticationFilter-Token: null
+[2024-07-01 22:30:47 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Starting ParentsUserControllerTest using Java 17.0.11 with PID 163524 (started by tg030 in E:\2024-01\2nd\2nd)
+[2024-07-01 22:30:47 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-07-01 22:30:48 WARN  Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+
+Using generated security password: 66f8bf1c-cff8-43b8-9f08-74aa0af19ad9
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2024-07-01 22:30:48 INFO  Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2024-07-01 22:30:48 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-07-01 22:30:48 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-07-01 22:30:48 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-07-01 22:30:48 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Started ParentsUserControllerTest in 1.8 seconds (process running for 2.542)
+[2024-07-01 22:30:49 INFO  Test worker] [org.example.second.security.jwt.JwtAuthenticationFilter] JwtAuthenticationFilter-Token: null
+[2024-07-01 22:33:07 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Starting ParentsUserControllerTest using Java 17.0.11 with PID 184160 (started by tg030 in E:\2024-01\2nd\2nd)
+[2024-07-01 22:33:07 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-07-01 22:33:09 WARN  Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+
+Using generated security password: dd13fe70-fd16-43ea-be57-c35565ceaff0
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2024-07-01 22:33:09 INFO  Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2024-07-01 22:33:09 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-07-01 22:33:09 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-07-01 22:33:09 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 2 ms
+[2024-07-01 22:33:09 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Started ParentsUserControllerTest in 1.817 seconds (process running for 2.592)
+[2024-07-01 22:33:09 INFO  Test worker] [org.example.second.security.jwt.JwtAuthenticationFilter] JwtAuthenticationFilter-Token: null
+[2024-07-01 22:38:35 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Starting ParentsUserControllerTest using Java 17.0.11 with PID 186432 (started by tg030 in E:\2024-01\2nd\2nd)
+[2024-07-01 22:38:35 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-07-01 22:38:36 WARN  Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+
+Using generated security password: 3e5b439a-356c-4238-8cec-ba055d48dc13
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2024-07-01 22:38:36 INFO  Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2024-07-01 22:38:36 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-07-01 22:38:36 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-07-01 22:38:36 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 2 ms
+[2024-07-01 22:38:36 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Started ParentsUserControllerTest in 1.782 seconds (process running for 2.553)
+[2024-07-01 22:38:37 INFO  Test worker] [org.example.second.security.jwt.JwtAuthenticationFilter] JwtAuthenticationFilter-Token: null
+[2024-07-01 22:39:03 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Starting ParentsUserControllerTest using Java 17.0.11 with PID 186400 (started by tg030 in E:\2024-01\2nd\2nd)
+[2024-07-01 22:39:03 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-07-01 22:39:04 WARN  Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+
+Using generated security password: da258881-d088-46d0-8066-918083f32058
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2024-07-01 22:39:04 INFO  Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2024-07-01 22:39:04 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-07-01 22:39:04 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-07-01 22:39:04 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-07-01 22:39:04 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Started ParentsUserControllerTest in 1.836 seconds (process running for 2.616)
+[2024-07-01 22:39:04 INFO  Test worker] [org.example.second.security.jwt.JwtAuthenticationFilter] JwtAuthenticationFilter-Token: null
+[2024-07-01 22:39:38 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Starting ParentsUserControllerTest using Java 17.0.11 with PID 187564 (started by tg030 in E:\2024-01\2nd\2nd)
+[2024-07-01 22:39:38 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-07-01 22:39:40 WARN  Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+
+Using generated security password: 1b7d0bd5-fb9b-4553-adb3-988ecec717f8
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2024-07-01 22:39:40 INFO  Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2024-07-01 22:39:40 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-07-01 22:39:40 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-07-01 22:39:40 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 2 ms
+[2024-07-01 22:39:40 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Started ParentsUserControllerTest in 1.827 seconds (process running for 2.591)
+[2024-07-01 22:39:40 INFO  Test worker] [org.example.second.security.jwt.JwtAuthenticationFilter] JwtAuthenticationFilter-Token: null
+[2024-07-01 22:45:01 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Starting ParentsUserControllerTest using Java 17.0.11 with PID 183800 (started by tg030 in E:\2024-01\2nd\2nd)
+[2024-07-01 22:45:01 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-07-01 22:45:02 WARN  Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+
+Using generated security password: 8ac002cc-6f3c-40e5-8428-181e7e2a4d28
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2024-07-01 22:45:02 INFO  Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2024-07-01 22:45:02 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-07-01 22:45:02 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-07-01 22:45:02 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-07-01 22:45:02 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Started ParentsUserControllerTest in 1.841 seconds (process running for 2.598)
+[2024-07-01 22:45:02 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-07-01 22:45:02 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-07-01 22:45:02 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-07-01 22:45:02 INFO  Test worker] [org.example.second.security.jwt.JwtAuthenticationFilter] JwtAuthenticationFilter-Token: null
+[2024-07-01 22:47:26 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Starting ParentsUserControllerTest using Java 17.0.11 with PID 189180 (started by tg030 in E:\2024-01\2nd\2nd)
+[2024-07-01 22:47:26 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-07-01 22:47:27 WARN  Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+
+Using generated security password: 5a442ac9-24c3-4c5f-8d9e-912254678223
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2024-07-01 22:47:27 INFO  Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2024-07-01 22:47:27 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-07-01 22:47:27 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-07-01 22:47:27 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-07-01 22:47:27 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Started ParentsUserControllerTest in 1.777 seconds (process running for 2.525)
+[2024-07-01 22:47:27 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-07-01 22:47:27 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-07-01 22:47:27 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-07-01 22:47:28 INFO  Test worker] [org.example.second.security.jwt.JwtAuthenticationFilter] JwtAuthenticationFilter-Token: null
+[2024-07-01 22:49:36 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Starting ParentsUserControllerTest using Java 17.0.11 with PID 189312 (started by tg030 in E:\2024-01\2nd\2nd)
+[2024-07-01 22:49:36 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-07-01 22:49:37 WARN  Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+
+Using generated security password: e77e3148-1749-459e-a85a-2c46f739ddb7
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2024-07-01 22:49:37 INFO  Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2024-07-01 22:49:38 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-07-01 22:49:38 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-07-01 22:49:38 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-07-01 22:49:38 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Started ParentsUserControllerTest in 1.813 seconds (process running for 2.579)
+[2024-07-01 22:49:38 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-07-01 22:49:38 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-07-01 22:49:38 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-07-01 22:49:38 INFO  Test worker] [org.example.second.security.jwt.JwtAuthenticationFilter] JwtAuthenticationFilter-Token: null
+[2024-07-01 22:52:06 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Starting ParentsUserControllerTest using Java 17.0.11 with PID 185540 (started by tg030 in E:\2024-01\2nd\2nd)
+[2024-07-01 22:52:06 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-07-01 22:52:08 WARN  Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+
+Using generated security password: facb5844-c1da-4c19-9a76-1c6a3fae36bc
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2024-07-01 22:52:08 INFO  Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2024-07-01 22:52:08 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-07-01 22:52:08 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-07-01 22:52:08 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-07-01 22:52:08 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Started ParentsUserControllerTest in 1.792 seconds (process running for 2.581)
+[2024-07-01 22:52:08 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-07-01 22:52:08 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-07-01 22:52:08 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-07-01 22:52:08 INFO  Test worker] [org.example.second.security.jwt.JwtAuthenticationFilter] JwtAuthenticationFilter-Token: null
+[2024-07-01 22:57:31 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Starting ParentsUserControllerTest using Java 17.0.11 with PID 189444 (started by tg030 in E:\2024-01\2nd\2nd)
+[2024-07-01 22:57:31 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-07-01 22:57:32 WARN  Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+
+Using generated security password: b5052ef3-6181-4ac0-b3d0-e8149deccd2f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2024-07-01 22:57:32 INFO  Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2024-07-01 22:57:33 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-07-01 22:57:33 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-07-01 22:57:33 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-07-01 22:57:33 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Started ParentsUserControllerTest in 1.801 seconds (process running for 2.538)
+[2024-07-01 22:57:33 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-07-01 22:57:33 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-07-01 22:57:33 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-07-01 22:57:33 INFO  Test worker] [org.example.second.security.jwt.JwtAuthenticationFilter] JwtAuthenticationFilter-Token: null
+[2024-07-01 23:02:29 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Starting ParentsUserControllerTest using Java 17.0.11 with PID 185132 (started by tg030 in E:\2024-01\2nd\2nd)
+[2024-07-01 23:02:29 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-07-01 23:02:30 WARN  Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+
+Using generated security password: c1fe8208-4bdf-4c50-81d7-60176f7c4785
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2024-07-01 23:02:30 INFO  Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2024-07-01 23:02:31 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-07-01 23:02:31 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-07-01 23:02:31 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-07-01 23:02:31 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Started ParentsUserControllerTest in 1.798 seconds (process running for 2.552)
+[2024-07-01 23:02:31 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-07-01 23:02:31 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-07-01 23:02:31 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-07-01 23:02:31 INFO  Test worker] [org.example.second.security.jwt.JwtAuthenticationFilter] JwtAuthenticationFilter-Token: null
+[2024-07-01 23:03:30 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Starting ParentsUserControllerTest using Java 17.0.11 with PID 184220 (started by tg030 in E:\2024-01\2nd\2nd)
+[2024-07-01 23:03:30 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-07-01 23:03:32 WARN  Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+
+Using generated security password: 7f5defe2-d591-4efd-8cd8-0e30010e2a8f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2024-07-01 23:03:32 INFO  Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2024-07-01 23:03:32 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-07-01 23:03:32 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-07-01 23:03:32 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-07-01 23:03:32 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Started ParentsUserControllerTest in 1.844 seconds (process running for 2.625)
+[2024-07-01 23:03:32 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-07-01 23:03:32 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-07-01 23:03:32 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-07-01 23:03:32 INFO  Test worker] [org.example.second.security.jwt.JwtAuthenticationFilter] JwtAuthenticationFilter-Token: null
+[2024-07-01 23:09:23 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Starting ParentsUserControllerTest using Java 17.0.11 with PID 189396 (started by tg030 in E:\2024-01\2nd\2nd)
+[2024-07-01 23:09:23 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-07-01 23:09:24 WARN  Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+
+Using generated security password: c342a4a5-c678-4624-883c-980349b28cd8
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2024-07-01 23:09:24 INFO  Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2024-07-01 23:09:25 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-07-01 23:09:25 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-07-01 23:09:25 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-07-01 23:09:25 INFO  Test worker] [org.example.second.user.ParentsUserControllerTest] Started ParentsUserControllerTest in 1.818 seconds (process running for 2.569)
+[2024-07-01 23:09:25 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-07-01 23:09:25 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-07-01 23:09:25 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-07-01 23:09:25 INFO  Test worker] [org.example.second.security.jwt.JwtAuthenticationFilter] JwtAuthenticationFilter-Token: null

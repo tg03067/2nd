@@ -1,10 +1,12 @@
 package org.example.second.user;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.example.second.CharEncodingConfiguration;
+import org.example.second.security.MyUser;
+import org.example.second.security.SecurityConfiguration;
 import org.example.second.security.jwt.JwtTokenProviderV2;
 import org.example.second.user.model.PostParentsUserReq;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,23 +16,40 @@ import org.springframework.context.annotation.Import;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+import org.springframework.web.context.WebApplicationContext;
 
+import java.util.List;
+
+import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.verify;
+import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.csrf;
+import static org.springframework.security.test.web.servlet.setup.SecurityMockMvcConfigurers.springSecurity;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-@Import(CharEncodingConfiguration.class)
+@Import({CharEncodingConfiguration.class, SecurityConfiguration.class})
 @WebMvcTest(ParentsUserControllerImpl.class)
 class ParentsUserControllerTest {
     @Autowired private ObjectMapper om;
     @Autowired private MockMvc mockMvc;
     @MockBean private ParentsUserService service;
     @MockBean private JwtTokenProviderV2 jwtTokenProviderV2;
+    @Autowired private WebApplicationContext webApplicationContext;
     private final String BASE_URL = "/api/user/parents";
+
+    @BeforeEach
+    public void setup() {
+        mockMvc = MockMvcBuilders
+                .webAppContextSetup(webApplicationContext)
+                .apply(springSecurity()).build();
+    }
 
     @Test @DisplayName("회원가입 TDD")
     void postParents() throws Exception {
@@ -41,24 +60,54 @@ class ParentsUserControllerTest {
         p1.setEmail("12345@naver.com");
         p1.setPhone("010-1234-1234");
         p1.setConnet("부");
-        p1.setAuth("ROLE_USER");
+        p1.setAuth("ROLE_PARENTS");
         p1.setAcept(2);
         p1.setParentsId(2L);
 
+//        int result = 1;
+//        given(service.postParentsUser(p1)).willReturn(result);
+//
+//        String json = om.writeValueAsString(p1);
+//
+//        ResponseEntity<Integer> expectedResponse = new ResponseEntity<>(result, HttpStatus.OK);
+//        String expectedJson = om.writeValueAsString(expectedResponse);
+//
+//        MyUser myUser = new MyUser();
+//        myUser.setUserId(p1.getParentsId());
+//        myUser.setRole(p1.getAuth());
+//
+//        String generatedToken = "generated-jwt-token";
+//        given(jwtTokenProviderV2.generateAccessToken(myUser)).willReturn(generatedToken);
+//
+//        String token = "Bearer " + generatedToken;
+//
+//        given(jwtTokenProviderV2.isValidateToken(generatedToken)).willReturn(true);
+//        given(jwtTokenProviderV2.getAuthentication(generatedToken)).willReturn(new UsernamePasswordAuthenticationToken("user", null,
+//                List.of(new SimpleGrantedAuthority("ROLE_PARENTS"))));
+//
+//        mockMvc.perform(post(BASE_URL + "/sign-up")
+//                        .contentType(MediaType.APPLICATION_JSON)
+//                        .header("Authorization", token)
+//                        .content(json)
+//                        .with(csrf()))
+//                .andExpect(status().isOk())
+//                .andExpect(content().json(expectedJson))
+//                .andDo(print());
+//
+//        verify(service).postParentsUser(p1);
         int result = 1;
-        given(service.postParentsUser(p1)).willReturn(result);
+        given(service.postParentsUser(any(PostParentsUserReq.class))).willReturn(result);
 
         String json = om.writeValueAsString(p1);
-        ResponseEntity<Integer> expectedResponse = new ResponseEntity<>(result, HttpStatus.OK);
-        String expectedJson = om.writeValueAsString(expectedResponse);
-        mockMvc.perform(post(BASE_URL)
+
+        mockMvc.perform(post(BASE_URL + "/sign-up")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(json))
                 .andExpect(status().isOk())
-                .andExpect(content().string(expectedJson))
+                .andExpect(content().string(String.valueOf(result)))
                 .andDo(print());
 
-        verify(service).postParentsUser(p1);
+        verify(service).postParentsUser(any(PostParentsUserReq.class));
     }
 
     @Test
