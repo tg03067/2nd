@@ -24,11 +24,12 @@ public class SecurityConfiguration {
         return http.sessionManagement(session ->
                         session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .httpBasic(https -> https.disable())
-
+                .formLogin(form -> form.disable())
+                .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(auth -> auth.requestMatchers(
                         // 회원가입, 로그인 인증이 안 되어 있어도 사용가능하게 세팅
-                        "/api/user/sign-up",
-                        "/api/user/sign-in",
+                        "/api/user/parents/sign-up",
+                        "/api/user/parents/sign-in",
                         "/api/user/access-token",
                         // swagger 사용할 수 있게 세팅
                         "/swagger",

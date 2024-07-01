@@ -1,5 +1,6 @@
 package org.example.second.security;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -13,9 +14,9 @@ import java.util.Collections;
 @Getter
 @Setter
 @NoArgsConstructor
+@AllArgsConstructor
 public class MyUserDetails implements UserDetails {
     private MyUser user;
-
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return Collections.singletonList(new SimpleGrantedAuthority(user.getRole()));

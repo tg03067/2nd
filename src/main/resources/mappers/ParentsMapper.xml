@@ -3,6 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.example.second.user.ParentsUserMapper">
+
     <insert id="postParentsUser" keyProperty="parentsId" useGeneratedKeys="true" >
         INSERT INTO parents
         SET uid = #{uid}
@@ -45,6 +46,7 @@
             , A.connet = #{connet}
             , A.phone = #{phone}
             , A.subphone = #{subPhone}
+            , B.phone = #{stuPhone}
             , A.email = #{email}
             , B.stu_eng_nm = #{stuEngNm}
             , A.addr = #{addr}
@@ -55,5 +57,44 @@
         SET upw = #{newUpw}
         WHERE parents_id = #{parentsId}
     </update>
+    <select id="signInPost">
+        SELECT parents_id AS parentId
+                , uid
+                , upw
+                , nm
+                , phone
+                , subphone AS subPhone
+                , email
+                , connet
+                , auth
+                , addr
+                , acept
+                , created_at AS createdAt
+                , updated_at AS updatedAt
+        FROM parents
+        WHERE uid = #{uid}
+    </select>
+    <select id="selTest">
+        SELECT parents_id AS parentId
+        , uid
+        , upw
+        , nm
+        , phone
+        , subphone AS subPhone
+        , email
+        , connet
+        , auth
+        , addr
+        , acept
+        , created_at AS createdAt
+        , updated_at AS updatedAt
+        FROM parents
+        <where>
+            <if test="uid > 0">
+                uid = #{uid}
+            </if>
+        </where>
+        ORDER BY uid
+    </select>
 
 </mapper>
