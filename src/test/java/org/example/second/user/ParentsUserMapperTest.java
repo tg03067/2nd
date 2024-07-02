@@ -26,8 +26,6 @@ class ParentsUserMapperTest {
         p.setNm("홍길동");
         p.setPhone("010-1234-1234");
         p.setConnet("부");
-        p.setAuth("ROLE_USER");
-        p.setAcept(2);
         int affectedRow = mapper.postParentsUser(p);
         assertEquals(1, affectedRow);
         GetParentsUserReq req1 = new GetParentsUserReq();
@@ -42,8 +40,6 @@ class ParentsUserMapperTest {
         p1.setNm("김길동");
         p1.setPhone("010-5678-5678");
         p1.setConnet("모");
-        p1.setAuth("ROLE_USER");
-        p1.setAcept(2);
         int affectedRow1 = mapper.postParentsUser(p1);
         assertEquals(1, affectedRow1);
         GetParentsUserReq req2 = new GetParentsUserReq();
@@ -62,9 +58,7 @@ class ParentsUserMapperTest {
         p.setSubPhone("010-1111-1111");
         p.setEmail("test@example.com");
         p.setConnet("Y");
-        p.setAuth("ROLE_USER");
         p.setAddr("Seoul");
-        p.setAcept(0);
         GetParentsUserReq req = new GetParentsUserReq();
         req.setSignedUserId(p.getParentsId());
         // 학부모 정보 저장
@@ -87,9 +81,7 @@ class ParentsUserMapperTest {
         p1.setSubPhone("010-2222-2222");
         p1.setEmail("test2@example.com");
         p1.setConnet("Y");
-        p1.setAuth("ROLE_USER");
         p1.setAddr("Busan");
-        p1.setAcept(0);
         GetParentsUserReq req1 = new GetParentsUserReq();
         req1.setSignedUserId(p1.getParentsId());
         // 두 번째 학부모 정보 저장
@@ -112,8 +104,6 @@ class ParentsUserMapperTest {
         p.setNm("홍길동");
         p.setPhone("010-1234-1234");
         p.setConnet("부");
-        p.setAuth("ROLE_USER");
-        p.setAcept(2);
         int affectedRow = mapper.postParentsUser(p);
         assertEquals(1, affectedRow);
 
@@ -133,8 +123,6 @@ class ParentsUserMapperTest {
         p.setNm("홍길동");
         p.setPhone("010-1234-1234");
         p.setConnet("부");
-        p.setAuth("ROLE_USER");
-        p.setAcept(2);
         int affectedRow = mapper.postParentsUser(p);
         assertEquals(1, affectedRow);
 
@@ -152,8 +140,6 @@ class ParentsUserMapperTest {
         p.setNm("홍길동");
         p.setPhone("010-1234-1234");
         p.setConnet("부");
-        p.setAuth("ROLE_USER");
-        p.setAcept(2);
         GetParentsUserReq req = new GetParentsUserReq();
         req.setSignedUserId(p.getParentsId());
         int affectedRow = mapper.postParentsUser(p);
@@ -176,8 +162,6 @@ class ParentsUserMapperTest {
         user.setNm("홍길동");
         user.setPhone("010-1234-1234");
         user.setConnet("부");
-        user.setAuth("ROLE_USER");
-        user.setAcept(2);
         mapper.postParentsUser(user);
 
         ParentsUser user1 = mapper.signInPost(user.getUid());

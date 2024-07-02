@@ -10,7 +10,7 @@ public interface ParentsUserService {
     // 회원가입
     int postParentsUser(PostParentsUserReq p);
     // 회원정보 조회
-    ParentsUserEntity getParentsUser(GetParentsUserReq parentsId);
+    ParentsUserEntity getParentsUser(String id);
     // 회원정보 수정
     int patchParentsUser(PatchParentsUserReq p);
     // 아이디 찾기

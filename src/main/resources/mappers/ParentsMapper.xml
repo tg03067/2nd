@@ -13,13 +13,12 @@
             , subphone = #{subPhone}
             , email = #{email}
             , connet = #{connet}
-            , auth = #{auth}
             , addr = #{addr}
-            , acept = #{acept}
     </insert>
     <select id="getParentsUser">
         SELECT parents_id AS parentsId
                 , uid
+                , upw
                 , nm
                 , phone
                 , subphone AS subPhone
@@ -27,9 +26,8 @@
                 , connet
                 , auth
                 , addr
-                , acept
         FROM parents
-        WHERE parents_id = #{parentsId}
+        WHERE parents_id = #{signedUserId}
     </select>
     <select id="getFindId">
         SELECT uid
@@ -39,26 +37,49 @@
     </select>
     <update id="patchParentsUser">
         UPDATE parents A
-        INNER JOIN student B
+        LEFT JOIN student B
         ON A.parents_id = B.parents_id
-        SET B.name = #{stuNm}
-            , A.nm = #{nm}
-            , A.connet = #{connet}
-            , A.phone = #{phone}
-            , A.subphone = #{subPhone}
-            , B.phone = #{stuPhone}
-            , A.email = #{email}
-            , B.stu_eng_nm = #{stuEngNm}
-            , A.addr = #{addr}
-            , B.etc = #{stuEtc}
+        <set>
+            <if test="stuNm != null">
+                B.name = #{stuNm},
+            </if>
+            <if test="nm != null">
+                A.nm = #{nm},
+            </if>
+            <if test="connet != null">
+                A.connet = #{connet},
+            </if>
+            <if test="phone != null">
+                A.phone = #{phone},
+            </if>
+            <if test="subPhone != null">
+                A.subphone = #{subPhone},
+            </if>
+            <if test="stuPhone != null">
+                B.phone = #{stuPhone},
+            </if>
+            <if test="email != null">
+                A.email = #{email},
+            </if>
+            <if test="stuEngNm != null">
+                B.eng_name = #{stuEngNm},
+            </if>
+            <if test="addr != null">
+                A.addr = #{addr},
+            </if>
+            <if test="stuEtc != null">
+                B.etc = #{stuEtc},
+            </if>
+        </set>
+        WHERE A.parents_id = #{parentsId}
     </update>
-    <update id="PatchPassword">
+    <update id="patchPassword">
         UPDATE parents
         SET upw = #{newUpw}
         WHERE parents_id = #{parentsId}
     </update>
     <select id="signInPost">
-        SELECT parents_id AS parentId
+        SELECT parents_id AS parentsId
                 , uid
                 , upw
                 , nm
@@ -74,6 +95,7 @@
         FROM parents
         WHERE uid = #{uid}
     </select>
+
     <select id="selTest">
         SELECT parents_id AS parentId
         , uid

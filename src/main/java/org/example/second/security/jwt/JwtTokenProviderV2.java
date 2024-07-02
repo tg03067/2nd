@@ -17,6 +17,8 @@ import org.springframework.stereotype.Component;
 
 import javax.crypto.SecretKey;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 @Slf4j
 @Component
@@ -39,6 +41,7 @@ public class JwtTokenProviderV2 {
         // yaml 파일에서 app.jw.refresh-token-expiry 내용을 가져오는 부분
     }
     private String generateToken(MyUser myUser, long tokenValidMilliSecond) {
+        log.debug("token for user: user={}, role={}", myUser.getUserId(), myUser.getRole());
         return Jwts.builder()
                 .issuedAt(new Date(System.currentTimeMillis())) // JWT 생성일시
                 .expiration(new Date(System.currentTimeMillis() + tokenValidMilliSecond)) // JWT 만료일시
@@ -51,21 +54,24 @@ public class JwtTokenProviderV2 {
     private Claims createClaims(MyUser myUser) {
         // JWT body 에 담는 내용
         try {
-            String json = om.writeValueAsString(myUser); // 객채 to JSON
-            return Jwts.claims().add("signedUser", json).build(); // Claims 에 JSON 저장
+            Map<String, Object> userMap = new HashMap<>();
+            userMap.put("userId", myUser.getUserId());
+            userMap.put("role", myUser.getRole());
+            String json = om.writeValueAsString(userMap);
+            log.debug("Created claims JSON: {}", json);
+            return Jwts.claims().add("signedUser", json).build();
         } catch (Exception e) {
-            e.printStackTrace();
+            log.error("Error creating claims", e);
+            throw new RuntimeException("Token creation failed", e);
         }
-        return null;
     }
     public Claims getAllClaims(String token) {
-        // token : 암호화 된 부분을 받아서 Payload 부분을 뺴내겠다/
         return Jwts
                 .parser()
-                .verifyWith(secretKey) // 똑같은 키로 복호화
+                .verifyWith(secretKey)
                 .build()
                 .parseSignedClaims(token)
-                .getPayload(); // JWT 안에 들어있는 payload ( Claims ) 를 리턴
+                .getPayload();
     }
     public UserDetails getUserDetailsFromToken(String token) {
         try {

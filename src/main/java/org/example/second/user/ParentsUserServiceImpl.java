@@ -14,6 +14,8 @@ import org.example.second.security.MyUserDetails;
 import org.example.second.security.jwt.JwtTokenProviderV2;
 import org.example.second.user.model.*;
 import org.mindrot.jbcrypt.BCrypt;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -63,9 +65,14 @@ public class ParentsUserServiceImpl implements ParentsUserService {
         return mapper.postParentsUser(p);
     }
     @Override // 회원정보 조회
-    public ParentsUserEntity getParentsUser(GetParentsUserReq parentsId) {
-        parentsId.setSignedUserId(authenticationFacade.getLoginUserId());
-        return mapper.getParentsUser(parentsId);
+    public ParentsUserEntity getParentsUser(String token) {
+        Authentication auth = jwtTokenProvider.getAuthentication(token) ;
+        SecurityContextHolder.getContext().setAuthentication(auth) ;
+        MyUserDetails userDetails = (MyUserDetails) auth.getPrincipal();
+        long parentsId = userDetails.getUser().getUserId() ;
+        GetParentsUserReq req = new GetParentsUserReq();
+        req.setSignedUserId(parentsId);
+        return mapper.getParentsUser(req);
     }
     @Override @Transactional // 회원정보 수정
     public int patchParentsUser(PatchParentsUserReq p) {
@@ -74,7 +81,12 @@ public class ParentsUserServiceImpl implements ParentsUserService {
     }
     @Override // 아이디 찾기
     public GetFindIdRes getFindId(GetFindIdReq req) {
-        return mapper.getFindId(req);
+        GetFindIdRes result = mapper.getFindId(req);
+        if (result == null) {
+            throw new RuntimeException("해당 요청에 대한 정보가 존재하지 않습니다.");
+        }
+
+        return result;
     }
     @Override @Transactional // 비밀번호 수정
     public int patchPassword(PatchPasswordReq p) {
@@ -84,6 +96,7 @@ public class ParentsUserServiceImpl implements ParentsUserService {
         if(Objects.isNull(entity)){
             throw new IllegalArgumentException("아이디를 확인해 주세요");
         } else if(!passwordEncoder.matches(p.getUpw(), entity.getUpw())) {
+            log.info("p pass: {}, entity pass: {}", p.getUpw(), entity.getUpw());
             throw new IllegalArgumentException("비밀번호를 확인해 주세요");
         }
         String password = passwordEncoder.encode(p.getNewUpw());
@@ -118,7 +131,7 @@ public class ParentsUserServiceImpl implements ParentsUserService {
                 accessToken(accessToken).
                 build();
     }
-    @Override
+    @Override // access token
     public Map getAccessToken(HttpServletRequest req){
         Cookie cookie = cookieUtils.getCookie(req, "refresh-token");
         if(cookie == null){

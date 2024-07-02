@@ -7,6 +7,7 @@ import lombok.Data;
 public class PatchPasswordReq {
     @JsonIgnore
     private long parentsId;
+
     private String uid;
     private String upw;
     private String newUpw;

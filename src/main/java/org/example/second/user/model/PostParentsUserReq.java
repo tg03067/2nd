@@ -10,16 +10,16 @@ import lombok.EqualsAndHashCode;
 public class PostParentsUserReq {
     @JsonIgnore
     private long parentsId;
-    @Schema(description = "아이디")
+    @Schema(description = "아이디", required = true)
     private String uid;
 
-    @Schema(description = "비밀번호")
+    @Schema(description = "비밀번호", required = true)
     private String upw;
 
-    @Schema(description = "이름")
+    @Schema(description = "이름", required = true)
     private String nm;
 
-    @Schema(description = "전화번호")
+    @Schema(description = "전화번호", required = true)
     private String phone;
 
     @Schema(description = "비상연락망")
@@ -28,15 +28,9 @@ public class PostParentsUserReq {
     @Schema(description = "이메일")
     private String email;
 
-    @Schema(description = "관계")
+    @Schema(description = "관계", required = true)
     private String connet;
-
-    @Schema(description = "권한 ROLE_USER")
-    private String auth;
 
     @Schema(description = "주소")
     private String addr;
-
-    @Schema(description = "가입 승인 여부", defaultValue = "2")
-    private int acept;
 }

@@ -2,7 +2,6 @@ package org.example.second.user;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.example.second.CharEncodingConfiguration;
-import org.example.second.security.MyUser;
 import org.example.second.security.SecurityConfiguration;
 import org.example.second.security.jwt.JwtTokenProviderV2;
 import org.example.second.user.model.PostParentsUserReq;
@@ -13,22 +12,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
-import java.util.List;
-
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.verify;
-import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.csrf;
 import static org.springframework.security.test.web.servlet.setup.SecurityMockMvcConfigurers.springSecurity;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
@@ -60,8 +51,6 @@ class ParentsUserControllerTest {
         p1.setEmail("12345@naver.com");
         p1.setPhone("010-1234-1234");
         p1.setConnet("부");
-        p1.setAuth("ROLE_PARENTS");
-        p1.setAcept(2);
         p1.setParentsId(2L);
 
 //        int result = 1;
