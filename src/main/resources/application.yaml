@@ -42,6 +42,12 @@ app:
     redirect-uri-param-cookie-name: redirect_uri
     cookie-expiry-second: 180
 
+coolsms:
+  api:
+    key: NCSEHZ5UAKR7VETZ
+    secret: RNMSMSC8P6QDSA6GDZWFYKAILU5FVRKP
+    caller: 010-8823-8342
+
 management:
   endpoint:
     health:
