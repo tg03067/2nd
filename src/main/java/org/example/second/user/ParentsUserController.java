@@ -22,4 +22,6 @@ public interface ParentsUserController {
     ResponseEntity<SignInPostRes> signInPost(SignInPostReq p, HttpServletResponse res);
     // 토큰정보 확인
     ResponseEntity<Map> getAccessToken(HttpServletRequest req);
+    // 비밀번호 찾기
+    ResponseEntity<GetFindPasswordRes> getFindPassword(GetFindPasswordReq req);
 }

@@ -79,9 +79,12 @@ public class ParentsUserControllerImpl implements ParentsUserController {
         Map<String, String> res = service.getAccessToken(req) ;
         return ResponseEntity.ok().body(res) ;
     }
-
     // 학부모 비밀번호 찾기
-
+    @Override @GetMapping("/find-password") @Operation(summary = "비밀번호 찾기")
+    public ResponseEntity<GetFindPasswordRes> getFindPassword(@ModelAttribute @ParameterObject GetFindPasswordReq req) {
+        GetFindPasswordRes res = service.getFindPassword(req);
+        return ResponseEntity.ok().body(res) ;
+    }
     // 과목별 성적 학인 ( 과목 별 원점수, 전체평균, 반평균, 전체등수, 반등수 )
 
     // 전자서명

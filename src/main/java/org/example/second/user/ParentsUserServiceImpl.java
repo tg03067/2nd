@@ -85,7 +85,6 @@ public class ParentsUserServiceImpl implements ParentsUserService {
         if (result == null) {
             throw new RuntimeException("해당 요청에 대한 정보가 존재하지 않습니다.");
         }
-
         return result;
     }
     @Override @Transactional // 비밀번호 수정
@@ -148,5 +147,9 @@ public class ParentsUserServiceImpl implements ParentsUserService {
         Map map = new HashMap<>();
         map.put("accessToken", accessToken);
         return map;
+    }
+
+    public GetFindPasswordRes getFindPassword(GetFindPasswordReq req) {
+        return null;
     }
 }

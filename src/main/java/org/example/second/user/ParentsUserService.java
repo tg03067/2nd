@@ -21,5 +21,6 @@ public interface ParentsUserService {
     SignInPostRes signInPost(SignInPostReq p, HttpServletResponse res);
     // 토큰정보 확인
     Map getAccessToken(HttpServletRequest req);
-
+    // 비밀번호 찾기
+    GetFindPasswordRes getFindPassword(GetFindPasswordReq req);
 }
