@@ -131,7 +131,7 @@ public class ParentsUserServiceImpl implements ParentsUserService {
                 build();
     }
     @Override // access token
-    public Map getAccessToken(HttpServletRequest req){
+    public Map<String, Object> getAccessToken(HttpServletRequest req){
         Cookie cookie = cookieUtils.getCookie(req, "refresh-token");
         if(cookie == null){
             throw new RuntimeException();
@@ -144,11 +144,11 @@ public class ParentsUserServiceImpl implements ParentsUserService {
         MyUser myUser = ((MyUserDetails)auth).getUser();
         String accessToken = jwtTokenProvider.generateAccessToken(myUser);
 
-        Map map = new HashMap<>();
+        Map<String, Object> map = new HashMap<>();
         map.put("accessToken", accessToken);
         return map;
     }
-
+    @Override
     public GetFindPasswordRes getFindPassword(GetFindPasswordReq req) {
         return null;
     }
