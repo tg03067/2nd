@@ -8,6 +8,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.example.second.security.jwt.JwtTokenProviderV2;
+import org.example.second.sms.SmsService;
 import org.example.second.user.model.*;
 import org.springdoc.core.annotations.ParameterObject;
 import org.springframework.http.HttpStatus;
@@ -24,7 +25,7 @@ import java.util.Map;
 public class ParentsUserControllerImpl implements ParentsUserController {
     private final ParentsUserServiceImpl service;
     private final JwtTokenProviderV2 tokenProvider;
-    private final ObjectMapper om;
+    private final SmsService smsService;
     // 학부모 회원가입
     @Override @PostMapping("/sign-up") @Operation(summary = "회원가입")
     public ResponseEntity<Integer> postParents(@RequestBody PostParentsUserReq p) {
@@ -72,7 +73,7 @@ public class ParentsUserControllerImpl implements ParentsUserController {
         return ResponseEntity.ok().body(res) ;
     }
     // 학부모 비밀번호 찾기
-    @Override @GetMapping("/find-password") @Operation(summary = "비밀번호 찾기")
+    @Override @GetMapping("/find-password") @Operation(summary = "비밀번호 찾기", description = "문자발송")
     public ResponseEntity<GetFindPasswordRes> getFindPassword(@ModelAttribute @ParameterObject GetFindPasswordReq req) {
         GetFindPasswordRes res = service.getFindPassword(req);
         return ResponseEntity.ok().body(res) ;

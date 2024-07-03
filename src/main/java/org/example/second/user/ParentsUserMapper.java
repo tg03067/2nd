@@ -20,7 +20,11 @@ public interface ParentsUserMapper {
     int patchPassword(PatchPasswordReq req);
     // 로그인
     ParentsUser signInPost(String uid);
+    // 회원 찾기 ( 비밀번호 찾기 )
+    List<ParentsUserEntity> getParentUserList(GetFindPasswordReq req);
 
     // TDD select
     List<ParentsUser> selTest(long parentsId);
+    // 학생정보 수정 ( 학부모 pk )
+    int updStudent(UpdateStudentParentsIdReq p);
 }

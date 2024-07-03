@@ -12,8 +12,10 @@ import org.example.second.security.AuthenticationFacade;
 import org.example.second.security.MyUser;
 import org.example.second.security.MyUserDetails;
 import org.example.second.security.jwt.JwtTokenProviderV2;
+import org.example.second.sms.SmsService;
 import org.example.second.user.model.*;
 import org.mindrot.jbcrypt.BCrypt;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -22,6 +24,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import java.util.regex.Pattern;
@@ -43,7 +46,8 @@ public class ParentsUserServiceImpl implements ParentsUserService {
     private final Pattern passwordPattern = Pattern.compile(PASSWORD_PATTERN);
     private final String EMAIL_PATTERN = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$";
     private final Pattern emailPattern = Pattern.compile(EMAIL_PATTERN);
-    private final String NAME_PATTERN  = "^[가-힣a-zA-Z\\s-]+$";
+    private final SmsService smsService;
+    @Value("${coolsms.api.caller}") private String coolsmsApiCaller;
 
     @Override @Transactional // 회원가입
     public int postParentsUser(PostParentsUserReq p) {
@@ -62,7 +66,11 @@ public class ParentsUserServiceImpl implements ParentsUserService {
         }
         String password = passwordEncoder.encode(p.getUpw());
         p.setUpw(password);
-        return mapper.postParentsUser(p);
+        int result = mapper.postParentsUser(p);
+        if(result != 1){
+            throw new IllegalArgumentException("회원가입에 실패했습니다.");
+        }
+        return result;
     }
     @Override // 회원정보 조회
     public ParentsUserEntity getParentsUser(String token) {
@@ -148,8 +156,32 @@ public class ParentsUserServiceImpl implements ParentsUserService {
         map.put("accessToken", accessToken);
         return map;
     }
-    @Override
+    @Override // 문자발송 비밀번호 찾기
     public GetFindPasswordRes getFindPassword(GetFindPasswordReq req) {
-        return null;
+        // 랜덤한 문자열 만들기
+        String randomValue = SmsService.generateRandomMessage(8);
+        List<ParentsUserEntity> list = mapper.getParentUserList(req);
+        // 회원정보 확인
+        if(list == null || list.isEmpty()){
+            throw new IllegalArgumentException("회원정보가 존재하지 않습니다.");
+        }
+        GetParentsUserReq p = new GetParentsUserReq();
+        p.setSignedUserId(list.get(0).getParentsId());
+        ParentsUserEntity entity = mapper.getParentsUser(p);
+
+        // 랜덤 문자열로 비밀번호 변경
+        String password = passwordEncoder.encode(randomValue);
+        PatchPasswordReq pp = new PatchPasswordReq();
+        pp.setParentsId(entity.getParentsId());
+        pp.setNewUpw(password);
+        // 비밀번호 업데이트
+        mapper.patchPassword(pp);
+        // 변경정보 세팅
+        GetFindPasswordRes res = new GetFindPasswordRes();
+        res.setUpw(pp.getNewUpw());
+
+        // 문자보내기
+        smsService.sendPasswordSms(req.getPhone(), coolsmsApiCaller, randomValue);
+        return res;
     }
 }

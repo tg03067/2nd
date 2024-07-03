@@ -44,9 +44,9 @@ app:
 
 coolsms:
   api:
-    key: NCSEHZ5UAKR7VETZ
-    secret: RNMSMSC8P6QDSA6GDZWFYKAILU5FVRKP
-    caller: 010-8823-8342
+    key: ${COOLSMS.API_KEY}
+    secret: ${COOLSMS.SECRET_KEY}
+    caller: ${COOLSMS.PHONE_NUMBER}
 
 management:
   endpoint:

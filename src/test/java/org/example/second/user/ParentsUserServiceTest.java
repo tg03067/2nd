@@ -66,8 +66,6 @@ class ParentsUserServiceTest {
         p1.setEmail("12345@naver.com");
         p1.setPhone("010-1234-1234");
         p1.setConnet("부");
-        p1.setAuth("ROLE_USER");
-        p1.setAcept(2);
         PostParentsUserReq p2 = new PostParentsUserReq();
         p2.setUid("pG234567");
         p2.setUpw("aAbB!@1212");
@@ -75,8 +73,6 @@ class ParentsUserServiceTest {
         p1.setEmail("12345678@naver.com");
         p2.setPhone("010-2345-2345");
         p2.setConnet("모");
-        p2.setAuth("ROLE_USER");
-        p2.setAcept(2);
         given(mapper.postParentsUser(p1)).willReturn(0);
         given(mapper.postParentsUser(p2)).willReturn(1);
         assertEquals(0, service.postParentsUser(p1),"1. 이상");
@@ -92,15 +88,13 @@ class ParentsUserServiceTest {
         p1.setNm("홍길동");
         p1.setPhone("010-1234-1234");
         p1.setConnet("부");
-        p1.setAuth("ROLE_USER");
-        p1.setAcept(2);
         p1.setParentsId(1L);
         GetParentsUserReq req1 = new GetParentsUserReq();
         req1.setSignedUserId(p1.getParentsId());
         ParentsUserEntity result1 = new ParentsUserEntity();
         result1.setParentsId(p1.getParentsId());
         given(mapper.getParentsUser(req1)).willReturn(result1);
-        ParentsUserEntity res1 = service.getParentsUser(req1);
+        ParentsUserEntity res1 = service.getParentsUser(String.valueOf(req1.getSignedUserId()));
         assertEquals(result1, res1);
         verify(mapper).getParentsUser(req1);
 
@@ -110,15 +104,13 @@ class ParentsUserServiceTest {
         p2.setNm("김길동");
         p2.setPhone("010-2345-2345");
         p2.setConnet("모");
-        p2.setAuth("ROLE_USER");
-        p2.setAcept(2);
         p2.setParentsId(2L);
         GetParentsUserReq req2 = new GetParentsUserReq();
         req2.setSignedUserId(p2.getParentsId());
         ParentsUserEntity result2 = new ParentsUserEntity();
         result2.setParentsId(p2.getParentsId());
         given(mapper.getParentsUser(req2)).willReturn(result2);
-        ParentsUserEntity res2 = service.getParentsUser(req2);
+        ParentsUserEntity res2 = service.getParentsUser(String.valueOf(req2.getSignedUserId()));
         assertEquals(result2, res2);
         verify(mapper).getParentsUser(req2);
     }
@@ -129,8 +121,6 @@ class ParentsUserServiceTest {
         p1.setNm("홍길동");
         p1.setPhone("010-1234-1234");
         p1.setConnet("부");
-        p1.setAuth("ROLE_USER");
-        p1.setAcept(2);
         p1.setParentsId(1L);
         ParentsUserEntity entity = new ParentsUserEntity();
         entity.setParentsId(p1.getParentsId());
@@ -169,8 +159,6 @@ class ParentsUserServiceTest {
         p1.setNm("홍길동");
         p1.setPhone("010-1234-1234");
         p1.setConnet("부");
-        p1.setAuth("ROLE_USER");
-        p1.setAcept(2);
         p1.setParentsId(1L);
 
         ParentsUserEntity entity = new ParentsUserEntity();

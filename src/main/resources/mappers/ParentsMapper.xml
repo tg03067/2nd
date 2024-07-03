@@ -95,6 +95,20 @@
         FROM parents
         WHERE uid = #{uid}
     </select>
+    <select id="getParentUserList">
+        SELECT parents_id AS parentsId
+                , uid
+                , upw
+                , nm
+                , phone
+                , subphone AS subPhone
+                , email
+                , connet
+                , addr
+        FROM parents
+        WHERE uid = #{uid}
+        AND phone = #{phone}
+    </select>
 
     <select id="selTest">
         SELECT parents_id AS parentId
@@ -118,5 +132,10 @@
         </where>
         ORDER BY uid
     </select>
+    <update id="updStudent">
+        UPDATE student
+        SET parents_id = #{parentsId}
+        WHERE stu_id = #{stuId}
+    </update>
 
 </mapper>

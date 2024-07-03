@@ -31,6 +31,7 @@ public class SecurityConfiguration {
                         "/api/user/parents/sign-up",
                         "/api/user/parents/sign-in",
                         "/api/user/access-token",
+                        "/api/user/parents/find-password",
                         // swagger 사용할 수 있게 세팅
                         "/swagger",
                         "/swagger-ui/**",
