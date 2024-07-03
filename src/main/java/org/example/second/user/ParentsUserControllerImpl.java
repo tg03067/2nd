@@ -1,6 +1,5 @@
 package org.example.second.user;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.servlet.http.HttpServletRequest;
@@ -78,9 +77,9 @@ public class ParentsUserControllerImpl implements ParentsUserController {
         GetFindPasswordRes res = service.getFindPassword(req);
         return ResponseEntity.ok().body(res) ;
     }
-    // 과목별 성적 학인 ( 과목 별 원점수, 전체평균, 반평균, 전체등수, 반등수 )
-
     // 전자서명
+
+    // 과목별 성적 학인 ( 과목 별 원점수, 전체평균, 반평균, 전체등수, 반등수 )
 
     // 성적통계
 }

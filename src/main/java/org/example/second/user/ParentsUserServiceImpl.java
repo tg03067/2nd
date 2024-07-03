@@ -15,6 +15,7 @@ import org.example.second.security.jwt.JwtTokenProviderV2;
 import org.example.second.sms.SmsService;
 import org.example.second.user.model.*;
 import org.mindrot.jbcrypt.BCrypt;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -23,11 +24,14 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.security.Signature;
+import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import java.util.regex.Pattern;
+
 
 @Service
 @Slf4j
@@ -63,6 +67,9 @@ public class ParentsUserServiceImpl implements ParentsUserService {
             } else {
                 p.setEmail(null);
             }
+        }
+        if(p.getAddr() != null && !p.getAddr().isEmpty()){
+
         }
         String password = passwordEncoder.encode(p.getUpw());
         p.setUpw(password);
@@ -184,4 +191,5 @@ public class ParentsUserServiceImpl implements ParentsUserService {
         smsService.sendPasswordSms(req.getPhone(), coolsmsApiCaller, randomValue);
         return res;
     }
+
 }

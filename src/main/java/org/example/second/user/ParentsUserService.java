@@ -23,4 +23,5 @@ public interface ParentsUserService {
     Map getAccessToken(HttpServletRequest req);
     // 비밀번호 찾기
     GetFindPasswordRes getFindPassword(GetFindPasswordReq req);
+    // 전자서명 관련
 }

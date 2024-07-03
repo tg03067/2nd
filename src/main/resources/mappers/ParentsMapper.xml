@@ -10,7 +10,7 @@
             , upw = #{upw}
             , nm = #{nm}
             , phone = #{phone}
-            , subphone = #{subPhone}
+            , sub_phone = #{subPhone}
             , email = #{email}
             , connet = #{connet}
             , addr = #{addr}
@@ -21,7 +21,7 @@
                 , upw
                 , nm
                 , phone
-                , subphone AS subPhone
+                , sub_phone AS subPhone
                 , email
                 , connet
                 , auth
@@ -53,7 +53,7 @@
                 A.phone = #{phone},
             </if>
             <if test="subPhone != null">
-                A.subphone = #{subPhone},
+                A.sub_phone = #{subPhone},
             </if>
             <if test="stuPhone != null">
                 B.phone = #{stuPhone},
@@ -84,7 +84,7 @@
                 , upw
                 , nm
                 , phone
-                , subphone AS subPhone
+                , sub_phone AS subPhone
                 , email
                 , connet
                 , auth
@@ -101,7 +101,7 @@
                 , upw
                 , nm
                 , phone
-                , subphone AS subPhone
+                , sub_phone AS subPhone
                 , email
                 , connet
                 , addr

@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.example.second.CharEncodingConfiguration;
 import org.example.second.security.SecurityConfiguration;
 import org.example.second.security.jwt.JwtTokenProviderV2;
+import org.example.second.sms.SmsService;
 import org.example.second.user.model.PostParentsUserReq;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -32,6 +33,7 @@ class ParentsUserControllerTest {
     @Autowired private MockMvc mockMvc;
     @MockBean private ParentsUserService service;
     @MockBean private JwtTokenProviderV2 jwtTokenProviderV2;
+    @MockBean private SmsService smsService;
     @Autowired private WebApplicationContext webApplicationContext;
     private final String BASE_URL = "/api/user/parents";
 
