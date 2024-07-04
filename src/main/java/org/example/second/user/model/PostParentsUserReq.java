@@ -2,6 +2,7 @@ package org.example.second.user.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.annotation.PostConstruct;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -31,6 +32,20 @@ public class PostParentsUserReq {
     @Schema(description = "관계", required = true)
     private String connet;
 
+    @Schema(description = "우편번호")
+    private String zoneCode ;
+
     @Schema(description = "주소")
     private String addr;
+
+    @JsonIgnore
+    private String addrs ;
+
+    public void setAddrs(String zoneCode, String addr) {
+        if(zoneCode == null && addr == null){
+            this.addrs = null;
+        } else {
+            this.addrs = zoneCode + "#" + addr;
+        }
+    }
 }

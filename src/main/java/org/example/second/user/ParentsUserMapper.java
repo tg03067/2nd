@@ -22,6 +22,8 @@ public interface ParentsUserMapper {
     ParentsUser signInPost(String uid);
     // 회원 찾기 ( 비밀번호 찾기 )
     List<ParentsUserEntity> getParentUserList(GetFindPasswordReq req);
+    // 전자서명
+    int signature(SignatureReq req) ;
 
     // TDD select
     List<ParentsUser> selTest(long parentsId);

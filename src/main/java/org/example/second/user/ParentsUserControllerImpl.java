@@ -13,7 +13,9 @@ import org.springdoc.core.annotations.ParameterObject;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -78,7 +80,11 @@ public class ParentsUserControllerImpl implements ParentsUserController {
         return ResponseEntity.ok().body(res) ;
     }
     // 전자서명
-
+    @Override @PostMapping("/signature") @Operation(summary = "전자서명")
+    public ResponseEntity<SignatureRes> signature(@RequestPart MultipartFile pic, @RequestPart SignatureReq req){
+        SignatureRes result = service.signature(pic, req);
+        return ResponseEntity.ok().body(result) ;
+    }
     // 과목별 성적 학인 ( 과목 별 원점수, 전체평균, 반평균, 전체등수, 반등수 )
 
     // 성적통계

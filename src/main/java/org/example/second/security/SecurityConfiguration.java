@@ -33,7 +33,7 @@ public class SecurityConfiguration {
                         "/api/user/access-token",
                         "/api/user/parents/find-password",
                         "/api/user/parents/find-id",
-                        "api/signature/verify",
+                        "/api/user/parents/signature",
                         // swagger 사용할 수 있게 세팅
                         "/swagger",
                         "/swagger-ui/**",

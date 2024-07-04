@@ -13,7 +13,7 @@
             , sub_phone = #{subPhone}
             , email = #{email}
             , connet = #{connet}
-            , addr = #{addr}
+            , addr = #{addrs}
     </insert>
     <select id="getParentsUser">
         SELECT parents_id AS parentsId
@@ -109,7 +109,14 @@
         WHERE uid = #{uid}
         AND phone = #{phone}
     </select>
-
+    <insert id="signature" keyProperty="signId" useGeneratedKeys="true">
+        INSERT INTO score_sign
+        SET stu_id = #{stuId}
+            , year = #{year}
+            , semester = #{semester}
+            , pic = #{pic}
+    </insert>
+    
     <select id="selTest">
         SELECT parents_id AS parentId
         , uid

@@ -30,8 +30,8 @@ public class ParentsUserEntity {
     private String auth;
 
     @Schema(description = "우편번호")
-    private String zoneCode
-            ;
+    private String zoneCode ;
+
     @Schema(description = "주소")
     private String addr;
 

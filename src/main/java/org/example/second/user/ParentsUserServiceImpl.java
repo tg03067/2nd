@@ -23,6 +23,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.security.Signature;
 import java.time.LocalDateTime;
@@ -68,8 +69,8 @@ public class ParentsUserServiceImpl implements ParentsUserService {
                 p.setEmail(null);
             }
         }
-        if(p.getAddr() != null && !p.getAddr().isEmpty()){
-
+        if ( p.getAddr() != null && p.getZoneCode() != null ){
+            p.setAddrs(p.getZoneCode(), p.getAddr()) ;
         }
         String password = passwordEncoder.encode(p.getUpw());
         p.setUpw(password);
@@ -191,5 +192,29 @@ public class ParentsUserServiceImpl implements ParentsUserService {
         smsService.sendPasswordSms(req.getPhone(), coolsmsApiCaller, randomValue);
         return res;
     }
+    @Override @Transactional
+    public SignatureRes signature(MultipartFile pic, SignatureReq req){
+        int result = mapper.signature(req) ;
+        if (pic == null || pic.isEmpty()) {
+            throw new RuntimeException("서명 파일이 없습니다.");
+        }
+        try{
+            String path = String.format("sign/%d", req.getSignId()) ;
+            String fullPath = customFileUtils.makeFolders(path) ;
+            String saveFileName = customFileUtils.makeRandomFileName(pic) ;
+            String target1 = path + "/" + saveFileName ;
+            String target = String.format("%s/%s", path, saveFileName) ;
+            customFileUtils.transferTo(pic, target);
+            req.setPic(target1) ;
 
+        } catch (Exception e) {
+            log.error("File upload error", e);
+            throw new RuntimeException("서명 등록 오류가 발생했습니다: " + e.getMessage());
+        }
+        return SignatureRes
+                .builder()
+                .signId(req.getSignId())
+                .pics(req.getPic())
+                .build() ;
+    }
 }

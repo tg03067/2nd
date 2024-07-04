@@ -3,7 +3,9 @@ package org.example.second.user;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.example.second.user.model.*;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.util.List;
 import java.util.Map;
 
 public interface ParentsUserService {
@@ -24,4 +26,5 @@ public interface ParentsUserService {
     // 비밀번호 찾기
     GetFindPasswordRes getFindPassword(GetFindPasswordReq req);
     // 전자서명 관련
+    SignatureRes signature(MultipartFile pic, SignatureReq req) ;
 }
