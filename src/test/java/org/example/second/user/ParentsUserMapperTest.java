@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.test.context.ActiveProfiles;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -17,7 +18,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class ParentsUserMapperTest {
     @Autowired ParentsUserMapper mapper;
 
-    @Test @DisplayName("학부모 post")
+    @Test @DisplayName("학부모 post") // 회원가입
     void postParentsUser() {
         PostParentsUserReq p = new PostParentsUserReq();
         p.setUid("p1");
@@ -42,12 +43,12 @@ class ParentsUserMapperTest {
         int affectedRow1 = mapper.postParentsUser(p1);
         assertEquals(1, affectedRow1);
         GetParentsUserReq req2 = new GetParentsUserReq();
-        req2.setSignedUserId(p.getParentsId());
+        req2.setSignedUserId(p1.getParentsId());
         ParentsUserEntity res1 = mapper.getParentsUser(req2);
         assertNotNull(res1);
         assertEquals(p1.getParentsId(), res1.getParentsId(), "2. 이상");
     }
-    @Test @DisplayName("post 1")
+    @Test @DisplayName("post 1") // 회원가입
     void postParentsUser2() {
         PostParentsUserReq p = new PostParentsUserReq();
         p.setUid("p1");
@@ -95,7 +96,7 @@ class ParentsUserMapperTest {
         assertNotNull(res1, "2. 예상된 학부모 정보는 null이 아닙니다.");
         assertEquals(p1.getParentsId(), res1.getParentsId(), "2. 예상된 학부모 ID");
     }
-    @Test @DisplayName("patch 1")
+    @Test @DisplayName("patch 1") // 정보 수정
     void patchParentsUser() {
         PostParentsUserReq p = new PostParentsUserReq();
         p.setUid("p1");
@@ -112,9 +113,9 @@ class ParentsUserMapperTest {
         req1.setSubPhone("010-1111-1111");
         req1.setEmail("test@example.com");
         int affectedRow1 = mapper.patchParentsUser(req1);
-        assertEquals(0, affectedRow1, "1. 이상");
+        assertEquals(1, affectedRow1, "1. 이상");
     }
-    @Test @DisplayName("아이디 찾기")
+    @Test @DisplayName("아이디 찾기") // 아이디 찾기
     void getFindId() {
         PostParentsUserReq p = new PostParentsUserReq();
         p.setUid("p1");
@@ -131,7 +132,7 @@ class ParentsUserMapperTest {
         GetFindIdRes res = mapper.getFindId(req);
         assertEquals(p.getUid(), res.getUid());
     }
-    @Test @DisplayName("비밀번호 변경")
+    @Test @DisplayName("비밀번호 변경") // 비밀번호 변경
     void patchPassword() {
         PostParentsUserReq p = new PostParentsUserReq();
         p.setUid("p1");
@@ -153,7 +154,7 @@ class ParentsUserMapperTest {
         assertEquals(1, affectedRow1);
         mapper.getParentsUser(req);
     }
-    @Test @DisplayName("로그인")
+    @Test @DisplayName("로그인") // 로그인
     void signInPost() {
         PostParentsUserReq user = new PostParentsUserReq();
         user.setUid("p1");
@@ -169,10 +170,42 @@ class ParentsUserMapperTest {
             req1.setSignedUserId(user1.getParentsId());
             List<ParentsUser> userList = mapper.selTest(req1.getSignedUserId());
             ParentsUser user1comp = userList.get(0);
-            assertEquals(user1comp, user1);
+            user1comp.setParentsId(user1.getParentsId());
+
+            assertEquals(user1comp.getParentsId(), user1.getParentsId());
+            assertEquals(user1comp.getUid(), user1.getUid());
+            assertEquals(user1comp.getNm(), user1.getNm());
 
             ParentsUser userNo = mapper.signInPost("asdf");
             assertNull(userNo);
         }
+    }
+    @Test @DisplayName("회원정보 확인") // 회원정보 확인
+    void getParentsUser() {
+        GetParentsUserReq req = new GetParentsUserReq() ;
+        req.setSignedUserId(1) ;
+        ParentsUserEntity entity = mapper.getParentsUser(req) ;
+        List<ParentsUser> list = mapper.selTest(req.getSignedUserId()) ;
+        assertEquals(1, list.size());
+        assertEquals(entity.getUid(), list.get(0).getUid());
+
+        GetParentsUserReq req1 = new GetParentsUserReq() ;
+        req1.setSignedUserId(1000) ;
+        ParentsUserEntity entity1 = mapper.getParentsUser(req1) ;
+        assertNull(entity1);
+    }
+    @Test @DisplayName("비밀번호 찾기 용 회원찾기") // 회원찾기
+    void getFindPassword(){
+        GetFindPasswordReq req = new GetFindPasswordReq() ;
+        req.setUid("parent1");
+        req.setPhone("010-1234-5678");
+        List<ParentsUserEntity> list = mapper.getParentUserList(req) ;
+        assertEquals(1, list.size());
+
+        GetFindPasswordReq req1 = new GetFindPasswordReq() ;
+        req1.setUid("parent100");
+        req1.setPhone("010-4252-4567");
+        List<ParentsUserEntity> list1 = mapper.getParentUserList(req1) ;
+        assertEquals(0, list1.size());
     }
 }

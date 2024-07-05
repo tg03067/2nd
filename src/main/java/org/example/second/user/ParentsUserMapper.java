@@ -26,7 +26,7 @@ public interface ParentsUserMapper {
     int signature(SignatureReq req) ;
 
     // TDD select
-    List<ParentsUser> selTest(long parentsId);
+    List<ParentsUser> selTest(long signedId);
     // 학생정보 수정 ( 학부모 pk )
     int updStudent(UpdateStudentParentsIdReq p);
 }

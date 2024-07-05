@@ -12,6 +12,7 @@ import org.example.second.user.model.*;
 import org.springdoc.core.annotations.ParameterObject;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -34,7 +35,7 @@ public class ParentsUserControllerImpl implements ParentsUserController {
         return ResponseEntity.ok().body(result) ;
     }
     // 정보 조회
-    @Override @GetMapping("/parent-info") @Operation(summary = "정보조회")
+    @Override @GetMapping("/parent-info") @Operation(summary = "정보조회") @PreAuthorize("hasRole('PARENT')")
     public ResponseEntity<ParentsUserEntity> getParentsUser(HttpServletRequest req) {
         String token = tokenProvider.resolveToken(req) ;
         if (token == null) {
@@ -44,7 +45,7 @@ public class ParentsUserControllerImpl implements ParentsUserController {
         return ResponseEntity.ok().body(p) ;
     }
     // 정보 수정
-    @Override @PutMapping("/info-update") @Operation(summary = "정보수정")
+    @Override @PutMapping("/info-update") @Operation(summary = "정보수정") @PreAuthorize("hasRole('PARENT')")
     public ResponseEntity<Integer> patchParentsUser(@RequestBody PatchParentsUserReq p) {
         int result = service.patchParentsUser(p) ;
         return ResponseEntity.ok().body(result) ;
@@ -56,7 +57,7 @@ public class ParentsUserControllerImpl implements ParentsUserController {
         return ResponseEntity.ok().body(res) ;
     }
     // 비밀번호 수정
-    @Override @PutMapping("/password-update") @Operation(summary = "비밀번호 수정")
+    @Override @PutMapping("/password-update") @Operation(summary = "비밀번호 수정") @PreAuthorize("hasRole('PARENT')")
     public ResponseEntity<Integer> patchPassword(@RequestBody PatchPasswordReq p) {
         int result = service.patchPassword(p) ;
         return ResponseEntity.ok().body(result) ;
@@ -80,7 +81,7 @@ public class ParentsUserControllerImpl implements ParentsUserController {
         return ResponseEntity.ok().body(res) ;
     }
     // 전자서명
-    @Override @PostMapping("/signature") @Operation(summary = "전자서명")
+    @Override @PostMapping("/signature") @Operation(summary = "전자서명") @PreAuthorize("hasRole('PARENT')")
     public ResponseEntity<SignatureRes> signature(@RequestPart MultipartFile pic, @RequestPart SignatureReq req){
         SignatureRes result = service.signature(pic, req);
         return ResponseEntity.ok().body(result) ;

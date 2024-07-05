@@ -1,6 +1,7 @@
 package org.example.second.signature;
 
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.example.second.signature.model.SignReq;
 import org.example.second.signature.model.VerifyReq;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +12,7 @@ import java.security.*;
 
 @RestController
 @RequestMapping("/api/signature")
+@Tag(name = "서명 아님" , description = "서명아님")
 public class DigitalSignatureController {
     private DigitalSignatureService digitalSignatureService;
 

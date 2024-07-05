@@ -3,6 +3,7 @@ package org.example.second.user;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import org.apache.maven.model.Parent;
 import org.example.second.common.AppProperties;
 import org.example.second.common.CookieUtils;
 import org.example.second.common.CustomFileUtils;
@@ -10,6 +11,7 @@ import org.example.second.security.AuthenticationFacade;
 import org.example.second.security.MyUser;
 import org.example.second.security.MyUserDetails;
 import org.example.second.security.jwt.JwtTokenProviderV2;
+import org.example.second.sms.SmsService;
 import org.example.second.user.model.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -22,12 +24,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContext;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import java.util.Map;
+import java.util.regex.Pattern;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
@@ -37,7 +43,7 @@ import static org.mockito.Mockito.*;
 
 @TestPropertySource(
         properties = {
-                "E:\2024-01\2nd"
+                "file.dir=D:\\download\\2nd"
         }
 )
 @ExtendWith(SpringExtension.class)
@@ -51,13 +57,33 @@ class ParentsUserServiceTest {
     @MockBean private JwtTokenProviderV2 jwtTokenProvider;
     @MockBean private CookieUtils cookieUtils;
     @MockBean private AuthenticationFacade authenticationFacade;
+    @MockBean private Authentication authentication ;
     @MockBean private AppProperties appProperties;
+    @MockBean private SmsService smsService ;
+    private final String ID_PATTERN = "^(?=.*[a-zA-Z])(?=.*\\d)[a-zA-Z\\d]{6,12}$";
+    private final String PASSWORD_PATTERN = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d|.*[!@#$%^&*()\\-_=+\\\\|\\[{\\]};:'\",<.>/?]).{8,20}$";
+    private final Pattern idPattern = Pattern.compile(ID_PATTERN);
+    private final Pattern passwordPattern = Pattern.compile(PASSWORD_PATTERN);
+    private final String EMAIL_PATTERN = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$";
+    private final Pattern emailPattern = Pattern.compile(EMAIL_PATTERN);
+    @Value("${coolsms.api.caller}") private String coolsmsApiCaller;
 
     @BeforeEach
     void setUp() {
         MockitoAnnotations.openMocks(this);
+
+        Authentication authentication = mock(Authentication.class);
+        SecurityContext securityContext = mock(SecurityContext.class);
+        SecurityContextHolder.setContext(securityContext);
+        given(securityContext.getAuthentication()).willReturn(authentication);
+
+        MyUserDetails myUserDetails = mock(MyUserDetails.class);
+        MyUser myUser = new MyUser();
+        myUser.setUserId(1L);
+        given(authentication.getPrincipal()).willReturn(myUserDetails);
+        given(myUserDetails.getUser()).willReturn(myUser);
     }
-    @Test @DisplayName("post 1")
+    @Test @DisplayName("post 1") // 회원가입
     void postParentsUser() {
         PostParentsUserReq p1 = new PostParentsUserReq();
         p1.setUid("pG123456");
@@ -66,6 +92,7 @@ class ParentsUserServiceTest {
         p1.setEmail("12345@naver.com");
         p1.setPhone("010-1234-1234");
         p1.setConnet("부");
+
         PostParentsUserReq p2 = new PostParentsUserReq();
         p2.setUid("pG234567");
         p2.setUpw("aAbB!@1212");
@@ -73,48 +100,97 @@ class ParentsUserServiceTest {
         p1.setEmail("12345678@naver.com");
         p2.setPhone("010-2345-2345");
         p2.setConnet("모");
-        given(mapper.postParentsUser(p1)).willReturn(0);
+
+        given(mapper.postParentsUser(p1)).willReturn(1);
         given(mapper.postParentsUser(p2)).willReturn(1);
-        assertEquals(0, service.postParentsUser(p1),"1. 이상");
+
+        assertEquals(1, service.postParentsUser(p1),"1. 이상");
         assertEquals(1, service.postParentsUser(p2),"2. 이상");
+
         verify(mapper).postParentsUser(p1);
         verify(mapper).postParentsUser(p2);
     }
-    @Test @DisplayName("회원정보 확인")
+    @Test @DisplayName("회원정보 확인") // 회원정보 확인
     void getParentsUser() {
-        HttpServletResponse res = null;
+        HttpServletResponse res = null ;
+        long parentsId = 100 ;
         PostParentsUserReq p1 = new PostParentsUserReq();
-        p1.setUid("p1");
+        p1.setUid("pG123456");
+        p1.setUpw("aAbB!@1212");
         p1.setNm("홍길동");
+        p1.setEmail("12345@naver.com");
         p1.setPhone("010-1234-1234");
         p1.setConnet("부");
-        p1.setParentsId(1L);
-        GetParentsUserReq req1 = new GetParentsUserReq();
-        req1.setSignedUserId(p1.getParentsId());
-        ParentsUserEntity result1 = new ParentsUserEntity();
-        result1.setParentsId(p1.getParentsId());
-        given(mapper.getParentsUser(req1)).willReturn(result1);
-        ParentsUserEntity res1 = service.getParentsUser(String.valueOf(req1.getSignedUserId()));
-        assertEquals(result1, res1);
-        verify(mapper).getParentsUser(req1);
+        p1.setParentsId(parentsId) ;
 
+        String token = "accessToken" ;
+        Authentication auth = mock(Authentication.class) ;
+        MyUserDetails myUserDetails = mock(MyUserDetails.class) ;
+        MyUser myUser = new MyUser() ;
+        myUser.setUserId(p1.getParentsId());
+
+        given(jwtTokenProvider.getAuthentication(token)).willReturn(auth) ;
+        given(auth.getPrincipal()).willReturn(myUserDetails) ;
+        given(myUserDetails.getUser()).willReturn(myUser) ;
+
+        GetParentsUserReq req = new GetParentsUserReq() ;
+        req.setSignedUserId(p1.getParentsId()) ;
+        ParentsUserEntity entity = new ParentsUserEntity() ;
+        entity.setParentsId(p1.getParentsId()) ;
+        entity.setUid(p1.getUid());
+        entity.setUpw(p1.getUpw());
+        entity.setNm(p1.getNm());
+        entity.setEmail(p1.getEmail());
+        entity.setPhone(p1.getPhone());
+        entity.setConnet(p1.getConnet());
+
+        System.out.println("Request: " + req) ;
+        System.out.println("Entity: " + entity);
+
+        given(mapper.getParentsUser(eq(req))).willReturn(entity) ;
+
+        ParentsUserEntity res0 = service.getParentsUser(token) ;
+
+        System.out.println("ResultEntity: " + res0) ;
+
+        assertEquals(entity, res0) ;
+        verify(jwtTokenProvider).getAuthentication(token) ;
+        verify(mapper).getParentsUser(eq(req)) ;
+
+        long parentsId2 = 200L;
+        String token2 = "accessToken2";
 
         PostParentsUserReq p2 = new PostParentsUserReq();
-        p2.setUid("p2");
+        p2.setUid("pG234567");
+        p2.setUpw("aAbB!@1212");
         p2.setNm("김길동");
+        p2.setEmail("12345678@naver.com");
         p2.setPhone("010-2345-2345");
         p2.setConnet("모");
-        p2.setParentsId(2L);
+        p2.setParentsId(parentsId2);
+
+        Authentication auth2 = mock(Authentication.class);
+        MyUserDetails myUserDetails2 = mock(MyUserDetails.class);
+        MyUser myUser2 = new MyUser();
+        myUser2.setUserId(parentsId2);
+
+        given(jwtTokenProvider.getAuthentication(token2)).willReturn(auth2);
+        given(auth2.getPrincipal()).willReturn(myUserDetails2);
+        given(myUserDetails2.getUser()).willReturn(myUser2);
+
         GetParentsUserReq req2 = new GetParentsUserReq();
-        req2.setSignedUserId(p2.getParentsId());
-        ParentsUserEntity result2 = new ParentsUserEntity();
-        result2.setParentsId(p2.getParentsId());
-        given(mapper.getParentsUser(req2)).willReturn(result2);
-        ParentsUserEntity res2 = service.getParentsUser(String.valueOf(req2.getSignedUserId()));
-        assertEquals(result2, res2);
-        verify(mapper).getParentsUser(req2);
+        req2.setSignedUserId(parentsId2);
+
+        given(mapper.getParentsUser(eq(req2))).willReturn(null);
+
+        ParentsUserEntity res2 = service.getParentsUser(token2);
+
+        assertNull(res2);
+        verify(jwtTokenProvider).getAuthentication(token2);
+        verify(mapper).getParentsUser(eq(req2));
+
     }
-    @Test @DisplayName("정보수정")
+    @Test @DisplayName("정보수정") // 회원정보 수정
     void patchParentsUser() {
         PostParentsUserReq p1 = new PostParentsUserReq();
         p1.setUid("p1");
@@ -152,7 +228,7 @@ class ParentsUserServiceTest {
         int result2 = service.patchParentsUser(req2);
         assertEquals(0, result2);
     }
-    @Test @DisplayName("아이디 찾기")
+    @Test @DisplayName("아이디 찾기") // 아이디 찾기
     void getFindId() {
         PostParentsUserReq p1 = new PostParentsUserReq();
         p1.setUid("p1");
@@ -177,7 +253,7 @@ class ParentsUserServiceTest {
         assertEquals(beforeRes.getUid(), afterRes.getUid());
         verify(mapper).getFindId(req);
     }
-    @Test @DisplayName("아이디 찾기2")
+    @Test @DisplayName("아이디 찾기2") // 아이디 찾기
     void getFindId2() {
         GetFindIdReq req = new GetFindIdReq();
         req.setPhone("010-1234-3456");
@@ -189,7 +265,7 @@ class ParentsUserServiceTest {
         assertNull(afterRes);
         verify(mapper).getFindId(req);
     }
-    @Test @DisplayName("비밀번호 수정")
+    @Test @DisplayName("비밀번호 수정") // 비밀번호 수정
     void patchPassword() {
         String encodedOldPassword = "encodedOldPassword";
         String encodedNewPassword = "encodedNewPassword";
@@ -225,7 +301,7 @@ class ParentsUserServiceTest {
                 req.getNewUpw().equals(encodedNewPassword)
         ));
     }
-    @Test @DisplayName("로그인")
+    @Test @DisplayName("로그인") // 로그인
     void signInPost() {
         HttpServletResponse res = null;
         SignInPostReq req1 = new SignInPostReq();

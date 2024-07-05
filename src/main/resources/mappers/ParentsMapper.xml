@@ -123,7 +123,7 @@
         , upw
         , nm
         , phone
-        , subphone AS subPhone
+        , sub_phone AS subPhone
         , email
         , connet
         , auth
@@ -133,11 +133,11 @@
         , updated_at AS updatedAt
         FROM parents
         <where>
-            <if test="uid > 0">
-                uid = #{uid}
+            <if test="signedUserId > 0">
+                parents_id = #{signedUserId}
             </if>
         </where>
-        ORDER BY uid
+        ORDER BY parents_id
     </select>
     <update id="updStudent">
         UPDATE student
