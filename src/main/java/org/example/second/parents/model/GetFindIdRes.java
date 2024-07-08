@@ -1,4 +1,4 @@
-package org.example.second.user.model;
+package org.example.second.parents.model;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;

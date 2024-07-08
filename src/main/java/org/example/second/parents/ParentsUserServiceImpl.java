@@ -1,4 +1,4 @@
-package org.example.second.user;
+package org.example.second.parents;
 
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
@@ -13,9 +13,8 @@ import org.example.second.security.MyUser;
 import org.example.second.security.MyUserDetails;
 import org.example.second.security.jwt.JwtTokenProviderV2;
 import org.example.second.sms.SmsService;
-import org.example.second.user.model.*;
+import org.example.second.parents.model.*;
 import org.mindrot.jbcrypt.BCrypt;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -25,8 +24,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.security.Signature;
-import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

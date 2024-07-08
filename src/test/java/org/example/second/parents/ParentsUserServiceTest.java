@@ -1,9 +1,8 @@
-package org.example.second.user;
+package org.example.second.parents;
 
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import org.apache.maven.model.Parent;
 import org.example.second.common.AppProperties;
 import org.example.second.common.CookieUtils;
 import org.example.second.common.CustomFileUtils;
@@ -12,7 +11,7 @@ import org.example.second.security.MyUser;
 import org.example.second.security.MyUserDetails;
 import org.example.second.security.jwt.JwtTokenProviderV2;
 import org.example.second.sms.SmsService;
-import org.example.second.user.model.*;
+import org.example.second.parents.model.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

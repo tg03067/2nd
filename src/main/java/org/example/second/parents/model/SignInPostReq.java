@@ -1,4 +1,4 @@
-package org.example.second.user.model;
+package org.example.second.parents.model;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;

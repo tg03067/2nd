@@ -1,11 +1,11 @@
-package org.example.second.user;
+package org.example.second.parents;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.example.second.CharEncodingConfiguration;
 import org.example.second.security.SecurityConfiguration;
 import org.example.second.security.jwt.JwtTokenProviderV2;
 import org.example.second.sms.SmsService;
-import org.example.second.user.model.PostParentsUserReq;
+import org.example.second.parents.model.PostParentsUserReq;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

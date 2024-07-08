@@ -1,4 +1,4 @@
-package org.example.second.user.model;
+package org.example.second.parents.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
